@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    nav {
+        padding: 1em;
+        ul {
+            float: left;
+        }
+        button {
+            float: right;
+        }
+    }
+    #main {
+        clear: both;
+    }
+}
