@@ -87,11 +87,11 @@ body #wedding header {
 }
 
 body #wedding .ceremony {
-  margin: 0;
+  background-color: blue;
 }
 
 body #wedding .reception {
-  margin: 0;
+  background-color: green;
 }
 
 body #wedding .bridal_party ul {
@@ -99,18 +99,23 @@ body #wedding .bridal_party ul {
 }
 
 body #wedding .bridal_party ul li {
-  grid-column: span 2;
   background-color: yellow;
 }
 
 body #rsvp {
   grid-column: span 12;
-  margin: 0;
 }
 
 body #registry {
   grid-column: span 12;
-  margin: 0;
+}
+
+body #registry ul {
+  background-color: red;
+}
+
+body #registry ul li {
+  background-color: yellow;
 }
 
 body #photos {
