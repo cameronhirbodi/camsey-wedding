@@ -1,0 +1,18 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    nav {
+        display: inline-block;
+        ul {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            list-style-type: none;
+            li {
+                display: inline-block;
+            }
+        }
+        button {
+            display: inline-block;
+        }
+    }
+}
