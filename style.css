@@ -2,11 +2,13 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 body a {
   text-decoration: none;
 }
+
 body ul {
   float: left;
   margin: 0;
@@ -14,16 +16,20 @@ body ul {
   left: 0;
   list-style-type: none;
 }
+
 body ul li {
   display: inline-block;
   margin-right: 1em;
 }
+
 body nav {
   padding: 1em;
 }
+
 body nav button {
   float: right;
 }
+
 body #main {
   clear: both;
 }
@@ -33,10 +39,10 @@ button {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Peddana", serif;
+  font-family: 'Peddana', serif;
 }
 
 .script {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-style: italic;
 }
