@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
     nav {
         padding: 1em;
         ul {
@@ -11,6 +9,8 @@ body {
         }
     }
     #main {
+        color: $white;
+        background-color: $black;
         clear: both;
     }
 }
