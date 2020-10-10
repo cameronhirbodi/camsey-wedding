@@ -1,6 +1,13 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: "Peddana", serif;
+}
+body .script {
+  font-family: "Lora", serif;
+  font-style: italic;
+}
 body nav {
   display: inline-block;
 }
