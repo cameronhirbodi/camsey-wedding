@@ -27,16 +27,3 @@ body nav button {
 body #main {
   clear: both;
 }
-
-button {
-  text-transform: uppercase;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "Peddana", serif;
-}
-
-.script {
-  font-family: "Lora", serif;
-  font-style: italic;
-}

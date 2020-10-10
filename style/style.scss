@@ -1,25 +1,3 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    h1, h2, h3, h4, h5 {
-        font-family: 'Peddana', serif;
-    }
-    .script {
-        font-family: 'Lora', serif;
-        font-style: italic;
-    }
-    nav {
-        display: inline-block;
-        ul {
-            margin: 0;
-            padding: 0;
-            display: inline-block;
-            list-style-type: none;
-            li {
-                display: inline-block;
-            }
-        }
-        button {
-            display: inline-block;
-        }
-    }
-}
+@import "partials/base";
+@import "partials/buttons";
+@import "partials/typography";
