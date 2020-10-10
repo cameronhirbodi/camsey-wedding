@@ -1,5 +1,11 @@
 body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 16px;
+    justify-content: center;
+    align-content: center;
     #main {
+        grid-column: span 12;
         color: $white;
         background-color: $black;
         nav {
@@ -30,29 +36,52 @@ body {
     }
 
     #story {
+        grid-column: span 12;
         h4 {
             text-transform: uppercase;
         }
     }
 
     #wedding {
+        grid-column: span 12;
         header {
             color: $white;
             background-color: $black;
         }
+        .ceremony {
+            margin: 0;
+        }
+        .reception {
+            margin: 0;
+        }
+        .bridal_party {
+            ul {
+                background-color: red;
+                li {
+                    grid-column: span 2;
+                    background-color: yellow;
+                }
+            }
+        }
     }
 
     #rsvp {
+        grid-column: span 12;
         margin: 0;
     }
 
     #registry {
+        grid-column: span 12;
         margin: 0;
     }
 
     #photos {
+        grid-column: span 12;
         color: $white;
         background-color: $black;
+    }
+    footer {
+        grid-column: span 12;
     }
 
 }

@@ -18,7 +18,21 @@ button {
   text-transform: uppercase;
 }
 
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 body #main {
+  grid-column: span 12;
   color: #fff;
   background-color: #000;
 }
@@ -55,8 +69,16 @@ body #main #title h1 {
   text-transform: uppercase;
 }
 
+body #story {
+  grid-column: span 12;
+}
+
 body #story h4 {
   text-transform: uppercase;
+}
+
+body #wedding {
+  grid-column: span 12;
 }
 
 body #wedding header {
@@ -64,17 +86,41 @@ body #wedding header {
   background-color: #000;
 }
 
+body #wedding .ceremony {
+  margin: 0;
+}
+
+body #wedding .reception {
+  margin: 0;
+}
+
+body #wedding .bridal_party ul {
+  background-color: red;
+}
+
+body #wedding .bridal_party ul li {
+  grid-column: span 2;
+  background-color: yellow;
+}
+
 body #rsvp {
+  grid-column: span 12;
   margin: 0;
 }
 
 body #registry {
+  grid-column: span 12;
   margin: 0;
 }
 
 body #photos {
+  grid-column: span 12;
   color: #fff;
   background-color: #000;
+}
+
+body footer {
+  grid-column: span 12;
 }
 
 html {
