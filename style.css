@@ -18,22 +18,63 @@ button {
   text-transform: uppercase;
 }
 
-body nav {
-  padding: 1em;
-}
-
-body nav ul {
-  float: left;
-}
-
-body nav button {
-  float: right;
-}
-
 body #main {
   color: #fff;
   background-color: #000;
+}
+
+body #main nav {
+  padding: 1em;
+}
+
+body #main nav a {
+  color: #fff;
+}
+
+body #main nav ul {
+  float: left;
+}
+
+body #main nav button {
+  float: right;
+}
+
+body #main #title {
+  margin: 2em;
   clear: both;
+}
+
+body #main #title .logo {
+  display: inline-block;
+  background-color: #fff;
+  width: 2em;
+  height: 2em;
+}
+
+body #main #title h1 {
+  text-transform: uppercase;
+}
+
+body #timeline h4 {
+  text-transform: uppercase;
+}
+
+body #wedding header {
+  color: #fff;
+  background-color: #000;
+}
+
+body #rsvp {
+  margin: 0;
+}
+
+body #registry {
+  margin: 0;
+}
+
+body #photos {
+  color: #fff;
+  background-color: #000;
 }
 
 body {
@@ -46,6 +87,7 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 

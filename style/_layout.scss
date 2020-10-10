@@ -1,16 +1,58 @@
 body {
-    nav {
-        padding: 1em;
-        ul {
-            float: left;
-        }
-        button {
-            float: right;
-        }
-    }
     #main {
         color: $white;
         background-color: $black;
-        clear: both;
+        nav {
+            padding: 1em;
+            a {
+                color: $white;
+            }
+            ul {
+                float: left;
+            }
+            button {
+                float: right;
+            }
+        }
+        #title {
+            margin: 2em;
+            clear: both;
+            .logo {
+                display: inline-block;
+                background-color: $white;
+                width: 2em;
+                height: 2em;
+            }
+            h1 {
+                text-transform: uppercase;
+            }
+        }
     }
+
+    #timeline {
+        h4 {
+            text-transform: uppercase;
+        }
+    }
+
+    #wedding {
+        header {
+            color: $white;
+            background-color: $black;
+        }
+    }
+
+    #rsvp {
+        margin: 0;
+    }
+
+    #registry {
+        margin: 0;
+    }
+
+    #photos {
+        color: $white;
+        background-color: $black;
+    }
+
 }
