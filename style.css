@@ -21,8 +21,8 @@ button {
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 16px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -32,9 +32,13 @@ body {
 }
 
 body #main {
-  grid-column: span 12;
+  grid-column: span 4;
   color: #fff;
-  background-color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/title.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/title.jpg");
+  background-size: cover;
+  background-size: cover, 300%;
+  background-position-x: -78%;
 }
 
 body #main nav {
@@ -54,6 +58,7 @@ body #main nav button {
 }
 
 body #main #title {
+  height: 100%;
   margin: 2em;
   clear: both;
 }
@@ -67,10 +72,17 @@ body #main #title .logo {
 
 body #main #title h1 {
   text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+body #main #title h2 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25em;
 }
 
 body #story {
-  grid-column: span 12;
+  grid-column: span 4;
 }
 
 body #story h4 {
@@ -78,7 +90,7 @@ body #story h4 {
 }
 
 body #wedding {
-  grid-column: span 12;
+  grid-column: span 4;
 }
 
 body #wedding header {
@@ -103,11 +115,11 @@ body #wedding .bridal_party ul li {
 }
 
 body #rsvp {
-  grid-column: span 12;
+  grid-column: span 4;
 }
 
 body #registry {
-  grid-column: span 12;
+  grid-column: span 4;
 }
 
 body #registry ul {
@@ -119,18 +131,18 @@ body #registry ul li {
 }
 
 body #photos {
-  grid-column: span 12;
+  grid-column: span 4;
   color: #fff;
   background-color: #000;
 }
 
 body footer {
-  grid-column: span 12;
+  grid-column: span 4;
 }
 
 html {
-  font-size: 100%;
-  /*16px*/
+  font-size: 87.5%;
+  /*14px*/
 }
 
 html body {
