@@ -1,18 +1,22 @@
 body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 16px;
-    justify-content: center;
-    align-content: center;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 16px;
+        justify-content: center;
+        align-content: center;
+    }
     #main {
         grid-column: span 4;
+        padding: 16px;
         color: $white;
         background: linear-gradient(rgba($black, 0.20)), url("/images/title.jpg");
         background-size: cover;
-        background-size: cover, 300%;
-        background-position-x: -78%;
+        background-position: 80% 0;
+        background-repeat: no-repeat;
+        height: 100vh;
         nav {
-            padding: 1em;
+            padding: 1rem;
             a {
                 color: $white;
             }
@@ -25,29 +29,55 @@ body {
         }
         #title {
             height: 100%;
-            margin: 2em;
             clear: both;
             .logo {
                 display: inline-block;
                 background-color: $white;
-                width: 2em;
-                height: 2em;
+                width: 2rem;
+                height: 2rem;
             }
             h1 {
                 text-transform: uppercase;
-                letter-spacing: 0.2em;
+                letter-spacing: 0.2rem;
             }
             h2 {
                 font-family: 'Poppins', sans-serif;
                 text-transform: uppercase;
-                font-size: 1.25em;
+                font-size: 1rem;
             }
         }
     }
 
     #story {
         grid-column: span 4;
+        padding: 16px;
+        p {
+            margin: 1rem 0;
+            &:after {
+                display: block;
+                content: "";
+                margin: 2rem auto;
+                border-right: 2px dotted $black;
+                height: 2rem;
+                width: 0;
+            }
+        }
+        h3 {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            &:after {
+                display: block;
+                content: "";
+                margin: 2rem auto 4rem;
+                border-bottom: 5px solid $blue-light;
+                width: 30px;
+            }
+        }
         h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            font-family: 'Poppins', sans-serif;
             text-transform: uppercase;
         }
     }
@@ -56,13 +86,28 @@ body {
         grid-column: span 4;
         header {
             color: $white;
-            background-color: $black;
+            background: linear-gradient(rgba($black, 0.20)), url("/images/wedding.jpg");
+            background-size: cover;
+            background-position: 45% 0;
+            background-repeat: no-repeat;
+            height: 100vh;
+            h3 {
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+            }
+            h4 {
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
         }
         .ceremony {
             background-color: blue;
+            grid-column: span 2;
         }
         .reception {
             background-color: green;
+            grid-column: span 2;
         }
         .bridal_party {
             ul {
@@ -76,6 +121,12 @@ body {
 
     #rsvp {
         grid-column: span 4;
+        color: $white;
+        background: linear-gradient(rgba($black, 0.20)), url("/images/rsvp.jpg");
+        background-size: cover;
+        background-position: 45% 0;
+        background-repeat: no-repeat;
+        height: 100vh;
     }
 
     #registry {

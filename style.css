@@ -11,14 +11,14 @@ body ul {
 
 body ul li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 button {
   text-transform: uppercase;
 }
 
-body {
+body .wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -33,16 +33,18 @@ body {
 
 body #main {
   grid-column: span 4;
+  padding: 16px;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/title.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/title.jpg");
   background-size: cover;
-  background-size: cover, 300%;
-  background-position-x: -78%;
+  background-position: 80% 0;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 body #main nav {
-  padding: 1em;
+  padding: 1rem;
 }
 
 body #main nav a {
@@ -59,33 +61,63 @@ body #main nav button {
 
 body #main #title {
   height: 100%;
-  margin: 2em;
   clear: both;
 }
 
 body #main #title .logo {
   display: inline-block;
   background-color: #fff;
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
 }
 
 body #main #title h1 {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 
 body #main #title h2 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1rem;
 }
 
 body #story {
   grid-column: span 4;
+  padding: 16px;
+}
+
+body #story p {
+  margin: 1rem 0;
+}
+
+body #story p:after {
+  display: block;
+  content: "";
+  margin: 2rem auto;
+  border-right: 2px dotted #000;
+  height: 2rem;
+  width: 0;
+}
+
+body #story h3 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+body #story h3:after {
+  display: block;
+  content: "";
+  margin: 2rem auto 4rem;
+  border-bottom: 5px solid #A6BBCE;
+  width: 30px;
 }
 
 body #story h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
 
@@ -95,15 +127,33 @@ body #wedding {
 
 body #wedding header {
   color: #fff;
-  background-color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/wedding.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/wedding.jpg");
+  background-size: cover;
+  background-position: 45% 0;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body #wedding header h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+body #wedding header h4 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 body #wedding .ceremony {
   background-color: blue;
+  grid-column: span 2;
 }
 
 body #wedding .reception {
   background-color: green;
+  grid-column: span 2;
 }
 
 body #wedding .bridal_party ul {
@@ -116,6 +166,13 @@ body #wedding .bridal_party ul li {
 
 body #rsvp {
   grid-column: span 4;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/rsvp.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/rsvp.jpg");
+  background-size: cover;
+  background-position: 45% 0;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 body #registry {
@@ -166,27 +223,27 @@ html body h1, html body h2, html body h3, html body h4, html body h5 {
 
 html body h1 {
   margin-top: 0;
-  font-size: 3.052em;
+  font-size: 3.052rem;
 }
 
 html body h2 {
-  font-size: 2.441em;
+  font-size: 2.441rem;
 }
 
 html body h3 {
-  font-size: 1.953em;
+  font-size: 1.953rem;
 }
 
 html body h4 {
-  font-size: 1.563em;
+  font-size: 1.563rem;
 }
 
 html body h5 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 html body small, html body .text_small {
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 html body a {
@@ -195,6 +252,8 @@ html body a {
 }
 
 html body .script {
+  font-size: 1.25rem;
   font-family: 'Lora', serif;
   font-style: italic;
+  color: #686868;
 }
