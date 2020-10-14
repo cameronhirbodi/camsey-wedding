@@ -52,14 +52,17 @@ body {
         grid-column: span 4;
         padding: 16px;
         p {
-            margin: 1rem 0;
+            margin: 0;
             &:after {
                 display: block;
-                content: "";
-                margin: 2rem auto;
+                content: '';
+                margin: 1rem auto;
                 border-right: 2px dotted $black;
                 height: 2rem;
                 width: 0;
+            }
+            &.script:after {
+                display: none;
             }
         }
         h3 {
@@ -68,7 +71,7 @@ body {
             &:after {
                 display: block;
                 content: "";
-                margin: 2rem auto 4rem;
+                margin: 2rem auto;
                 border-bottom: 5px solid $blue-light;
                 width: 30px;
             }
@@ -79,6 +82,7 @@ body {
             letter-spacing: 0.2rem;
             font-family: 'Poppins', sans-serif;
             text-transform: uppercase;
+            margin-bottom: 0.5rem;
         }
     }
 
