@@ -30,6 +30,10 @@ body .wrapper #main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/title.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/title.jpg");
@@ -40,6 +44,8 @@ body .wrapper #main {
 }
 
 body .wrapper #main nav {
+  -ms-grid-row: 1;
+  grid-row: 1;
   padding: 1rem;
 }
 
@@ -56,8 +62,15 @@ body .wrapper #main nav button {
 }
 
 body .wrapper #main #title {
+  -ms-grid-row: 2;
+  grid-row: 2;
   height: 100%;
   clear: both;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 body .wrapper #main #title .logo {
