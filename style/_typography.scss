@@ -1,5 +1,8 @@
 html {
     font-size: 87.5%; /*14px*/
+    @media only screen and (min-width: 768px) {
+        font-size: 100%; /*16px*/
+      }
     body {
         font-family: 'Poppins', sans-serif;
         text-align: center;

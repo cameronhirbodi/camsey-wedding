@@ -31,9 +31,8 @@ body .wrapper {
       align-content: center;
 }
 
-body #main {
+body .wrapper #main {
   grid-column: span 4;
-  padding: 16px;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/title.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/title.jpg");
@@ -43,55 +42,54 @@ body #main {
   height: 100vh;
 }
 
-body #main nav {
+body .wrapper #main nav {
   padding: 1rem;
 }
 
-body #main nav a {
+body .wrapper #main nav a {
   color: #fff;
 }
 
-body #main nav ul {
+body .wrapper #main nav ul {
   float: left;
 }
 
-body #main nav button {
+body .wrapper #main nav button {
   float: right;
 }
 
-body #main #title {
+body .wrapper #main #title {
   height: 100%;
   clear: both;
 }
 
-body #main #title .logo {
+body .wrapper #main #title .logo {
   display: inline-block;
   background-color: #fff;
   width: 2rem;
   height: 2rem;
 }
 
-body #main #title h1 {
+body .wrapper #main #title h1 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 
-body #main #title h2 {
+body .wrapper #main #title h2 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-body #story {
+body .wrapper #story {
   grid-column: span 4;
-  padding: 16px;
 }
 
-body #story p {
+body .wrapper #story p {
   margin: 0;
 }
 
-body #story p:after {
+body .wrapper #story p:after {
   display: block;
   content: '';
   margin: 1rem auto;
@@ -100,16 +98,16 @@ body #story p:after {
   width: 0;
 }
 
-body #story p.script:after {
+body .wrapper #story p.script:after {
   display: none;
 }
 
-body #story h3 {
+body .wrapper #story h3 {
   font-family: 'Lora', serif;
   font-style: italic;
 }
 
-body #story h3:after {
+body .wrapper #story h3:after {
   display: block;
   content: "";
   margin: 2rem auto;
@@ -117,7 +115,7 @@ body #story h3:after {
   width: 30px;
 }
 
-body #story h4 {
+body .wrapper #story h4 {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
@@ -126,11 +124,11 @@ body #story h4 {
   margin-bottom: 0.5rem;
 }
 
-body #wedding {
+body .wrapper #wedding {
   grid-column: span 4;
 }
 
-body #wedding header {
+body .wrapper #wedding header {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/wedding.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/wedding.jpg");
@@ -140,36 +138,36 @@ body #wedding header {
   height: 100vh;
 }
 
-body #wedding header h3 {
+body .wrapper #wedding header h3 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 
-body #wedding header h4 {
+body .wrapper #wedding header h4 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-body #wedding .ceremony {
+body .wrapper #wedding .ceremony {
   background-color: blue;
   grid-column: span 2;
 }
 
-body #wedding .reception {
+body .wrapper #wedding .reception {
   background-color: green;
   grid-column: span 2;
 }
 
-body #wedding .bridal_party ul {
+body .wrapper #wedding .bridal_party ul {
   background-color: red;
 }
 
-body #wedding .bridal_party ul li {
+body .wrapper #wedding .bridal_party ul li {
   background-color: yellow;
 }
 
-body #rsvp {
+body .wrapper #rsvp {
   grid-column: span 4;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/rsvp.jpg");
@@ -180,31 +178,38 @@ body #rsvp {
   height: 100vh;
 }
 
-body #registry {
+body .wrapper #registry {
   grid-column: span 4;
 }
 
-body #registry ul {
+body .wrapper #registry ul {
   background-color: red;
 }
 
-body #registry ul li {
+body .wrapper #registry ul li {
   background-color: yellow;
 }
 
-body #photos {
+body .wrapper #photos {
   grid-column: span 4;
   color: #fff;
   background-color: #000;
 }
 
-body footer {
+body .wrapper footer {
   grid-column: span 4;
 }
 
 html {
   font-size: 87.5%;
   /*14px*/
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 100%;
+    /*16px*/
+  }
 }
 
 html body {
