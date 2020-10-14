@@ -2,11 +2,9 @@ body {
     .wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 16px;
-        justify-content: center;
-        align-content: center;
+        grid-gap: 20px;
         #main {
-            grid-column: span 4;
+            grid-column: 1 / 5;
             color: $white;
             background: linear-gradient(rgba($black, 0.20)), url("/images/title.jpg");
             background-size: cover;
@@ -45,9 +43,8 @@ body {
                 }
             }
         }
-
         #story {
-            grid-column: span 4;
+            grid-column: 1 / 5;
             p {
                 margin: 0;
                 &:after {
@@ -82,10 +79,11 @@ body {
                 margin-bottom: 0.5rem;
             }
         }
-
         #wedding {
-            grid-column: span 4;
+            grid-column: 1 / 5;
+            display: grid;
             header {
+                grid-column: 1 / 5;
                 color: $white;
                 background: linear-gradient(rgba($black, 0.20)), url("/images/wedding.jpg");
                 background-size: cover;
@@ -102,26 +100,33 @@ body {
                     font-size: 1rem;
                 }
             }
+            .location {
+                grid-column: 1 / 5;
+            }
             .ceremony {
-                background-color: blue;
-                grid-column: span 2;
+                grid-column: 1 / 3;
             }
             .reception {
-                background-color: green;
-                grid-column: span 2;
+                grid-column: 3 / 5;
+            }
+            .hotels {
+                grid-column: 1 / 5;
             }
             .bridal_party {
+                grid-column: 1 / 5;
                 ul {
-                    background-color: red;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap: 20px;
                     li {
+                        grid-column: span 2;
                         background-color: yellow;
                     }
                 }
             }
         }
-
         #rsvp {
-            grid-column: span 4;
+            grid-column: 1 / 5;
             color: $white;
             background: linear-gradient(rgba($black, 0.20)), url("/images/rsvp.jpg");
             background-size: cover;
@@ -129,24 +134,26 @@ body {
             background-repeat: no-repeat;
             height: 100vh;
         }
-
         #registry {
-            grid-column: span 4;
+            grid-column: 1 / 5;
+            display: grid;
             ul {
-                background-color: red;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 20px;
                 li {
+                    grid-column: span 4;
                     background-color: yellow;
                 }
             }
         }
-
         #photos {
-            grid-column: span 4;
+            grid-column: 1 / 5;
             color: $white;
             background-color: $black;
         }
         footer {
-            grid-column: span 4;
+            grid-column: 1 / 5;
         }
     }
 }
