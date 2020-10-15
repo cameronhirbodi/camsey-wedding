@@ -155,9 +155,9 @@ body .wrapper #story p {
 body .wrapper #story p:after {
   display: block;
   content: '';
-  margin: 1rem auto;
-  border-right: 2px dotted #000;
-  height: 2rem;
+  margin: 1rem auto 2.5rem;
+  border-right: 2px dotted #041132;
+  height: 1rem;
   width: 0;
 }
 
@@ -174,7 +174,7 @@ body .wrapper #story h3:after {
   display: block;
   content: "";
   margin: 2rem auto;
-  border-bottom: 5px solid #A6BBCE;
+  border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
 
@@ -202,8 +202,8 @@ body .wrapper #wedding h5 {
 body .wrapper #wedding h5:after {
   display: block;
   content: "";
-  margin: 2rem auto;
-  border-bottom: 5px solid #A6BBCE;
+  margin: 0 auto 2.5rem;
+  border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
 
@@ -282,6 +282,10 @@ body .wrapper #wedding .ceremony {
   padding: 20px;
 }
 
+body .wrapper #wedding .ceremony p {
+  margin-top: 0.2rem;
+}
+
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding .ceremony {
     -ms-grid-column: 1;
@@ -298,6 +302,10 @@ body .wrapper #wedding .reception {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px;
+}
+
+body .wrapper #wedding .reception p {
+  margin-top: 0.2rem;
 }
 
 @media only screen and (min-width: 768px) {
