@@ -33,18 +33,16 @@ button.secondary {
 body .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 body .wrapper #main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("images/splash_title.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2)), url("images/splash_title.jpg");
@@ -111,6 +109,7 @@ body .wrapper #main #title .logo {
   display: none;
   width: 5rem;
   height: 5rem;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -126,6 +125,12 @@ body .wrapper #main #title h1 {
   letter-spacing: 0.5rem;
 }
 
+@media only screen and (min-width: 768px) {
+  body .wrapper #main #title h1 {
+    font-size: 4.768em;
+  }
+}
+
 body .wrapper #main #title h2 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -134,17 +139,17 @@ body .wrapper #main #title h2 {
 }
 
 body .wrapper #story {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4 / 10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #story {
-    padding: 40px;
+    padding: 80px 40px;
   }
 }
 
@@ -188,11 +193,11 @@ body .wrapper #story h4 {
 }
 
 body .wrapper #wedding {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 body .wrapper #wedding h5 {
@@ -214,9 +219,7 @@ body .wrapper #wedding .time {
 }
 
 body .wrapper #wedding header {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
@@ -234,12 +237,12 @@ body .wrapper #wedding header {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding header {
-    padding: 40px;
+    padding: 80px 40px;
   }
 }
 
@@ -248,6 +251,12 @@ body .wrapper #wedding header h3 {
   line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #wedding header h3 {
+    font-size: 4.768em;
+  }
 }
 
 body .wrapper #wedding header h4 {
@@ -259,24 +268,20 @@ body .wrapper #wedding header h4 {
 }
 
 body .wrapper #wedding .location {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding .location {
-    padding: 40px;
+    padding: 80px 40px;
   }
 }
 
 body .wrapper #wedding .ceremony {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px;
@@ -288,17 +293,15 @@ body .wrapper #wedding .ceremony p {
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding .ceremony {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3 / 7;
     padding: 40px;
   }
 }
 
 body .wrapper #wedding .reception {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px;
@@ -310,66 +313,59 @@ body .wrapper #wedding .reception p {
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding .reception {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3 / 5;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 4;
+    grid-column: 7 / 11;
     padding: 40px;
   }
 }
 
 body .wrapper #wedding .hotels {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding .hotels {
-    padding: 40px;
+    padding: 80px 40px;
   }
 }
 
 body .wrapper #wedding .bridal_party {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  body .wrapper #wedding .bridal_party {
-    padding: 40px;
-  }
+  grid-column: span 12;
+  display: -ms-grid;
+  display: grid;
+  background-color: #F2F3F4;
 }
 
 body .wrapper #wedding .bridal_party ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 60px 20px;
   grid-gap: 20px;
 }
 
-body .wrapper #wedding .bridal_party ul li {
-  grid-column: span 2;
-  background-color: yellow;
-}
-
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding .bridal_party ul li {
-    grid-column: span 1;
+  body .wrapper #wedding .bridal_party ul {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    padding: 80px 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
+body .wrapper #wedding .bridal_party ul li {
+  color: #fff;
+  background-color: #000;
+}
+
 body .wrapper #rsvp {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
@@ -387,12 +383,12 @@ body .wrapper #rsvp {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #rsvp {
-    padding: 40px;
+    padding: 80px 40px;
   }
 }
 
@@ -401,6 +397,12 @@ body .wrapper #rsvp h3 {
   line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #rsvp h3 {
+    font-size: 4.768em;
+  }
 }
 
 body .wrapper #rsvp h4 {
@@ -412,64 +414,62 @@ body .wrapper #rsvp h4 {
 }
 
 body .wrapper #registry {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   display: -ms-grid;
   display: grid;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #registry {
-    padding: 40px;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3 / 11;
+    padding: 80px 0;
   }
 }
 
 body .wrapper #registry ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
 
-body .wrapper #registry ul li {
-  grid-column: span 3;
-  background-color: yellow;
-}
-
 @media only screen and (min-width: 768px) {
-  body .wrapper #registry ul li {
-    grid-column: span 1;
+  body .wrapper #registry ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
-body .wrapper #photos {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+body .wrapper #registry ul li {
   color: #fff;
   background-color: #000;
+}
+
+body .wrapper #photos {
+  grid-column: span 12;
+  background-color: #F2F3F4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #photos {
-    padding: 40px;
+    padding: 80px 40px;
   }
 }
 
 body .wrapper footer {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  grid-column: span 12;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #E1E5E8;
   padding: 20px;
 }
 
