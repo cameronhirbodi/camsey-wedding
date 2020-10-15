@@ -120,6 +120,7 @@ body .wrapper #main #title .logo {
 }
 
 body .wrapper #main #title h1 {
+  font-size: 3.815rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   line-height: 1.15;
@@ -243,7 +244,7 @@ body .wrapper #wedding header {
 }
 
 body .wrapper #wedding header h3 {
-  font-size: 3.052rem;
+  font-size: 3.815rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   line-height: 1.15;
@@ -388,7 +389,7 @@ body .wrapper #rsvp {
 }
 
 body .wrapper #rsvp h3 {
-  font-size: 3.052rem;
+  font-size: 3.815rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   line-height: 1.15;
