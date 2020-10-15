@@ -46,8 +46,8 @@ body .wrapper #main {
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/splash_title.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/splash_title.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("images/splash_title.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("images/splash_title.jpg");
   background-size: cover;
   background-position: 72% 0;
   background-repeat: no-repeat;
@@ -224,8 +224,8 @@ body .wrapper #wedding header {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/splash_wedding.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/splash_wedding.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("images/splash_wedding.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("images/splash_wedding.jpg");
   background-size: cover;
   background-position: 45% 0;
   background-repeat: no-repeat;
@@ -369,8 +369,8 @@ body .wrapper #rsvp {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("/images/splash_rsvp.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("/images/splash_rsvp.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("images/splash_rsvp.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2)), url("images/splash_rsvp.jpg");
   background-size: cover;
   background-position: 45% 0;
   background-repeat: no-repeat;
