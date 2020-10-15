@@ -121,9 +121,9 @@ body .wrapper #main #title .logo {
 
 body .wrapper #main #title h1 {
   font-size: 3.815rem;
+  line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  line-height: 1;
 }
 
 body .wrapper #main #title h2 {
@@ -245,9 +245,9 @@ body .wrapper #wedding header {
 
 body .wrapper #wedding header h3 {
   font-size: 3.815rem;
+  line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  line-height: 1;
 }
 
 body .wrapper #wedding header h4 {
@@ -390,9 +390,9 @@ body .wrapper #rsvp {
 
 body .wrapper #rsvp h3 {
   font-size: 3.815rem;
+  line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  line-height: 1;
 }
 
 body .wrapper #rsvp h4 {
@@ -498,7 +498,7 @@ html body p {
 html body h1, html body h2, html body h3, html body h4, html body h5 {
   font-family: 'Peddana', serif;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 2;
   margin: 0;
 }
 
