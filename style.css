@@ -488,6 +488,7 @@ body .wrapper #registry ul li {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  border: 1px solid #E1E5E8;
   padding: 1rem;
   min-height: 5rem;
 }
