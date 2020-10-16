@@ -483,8 +483,13 @@ body .wrapper #registry ul {
 }
 
 body .wrapper #registry ul li {
-  color: #fff;
-  background-color: #000;
+  display: inline-block;
+  background-color: #fff;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  min-height: 5rem;
 }
 
 body .wrapper #registry ul li.crate_barrel {
