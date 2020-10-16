@@ -13,7 +13,6 @@ body {
             background-repeat: no-repeat;
             height: 100vh;
             padding: 20px;
-            box-sizing: border-box;
             @media only screen and (min-width: 768px) {
                 padding: 40px;
               }
@@ -75,12 +74,12 @@ body {
             }
         }
         #story {
-            grid-column: 4 / 10;
-            box-sizing: border-box;
+            grid-column: span 12;
             padding: 60px 20px;
             @media only screen and (min-width: 768px) {
+                grid-column: 4 / 10;
                 padding: 80px 40px;
-              }
+            }
             p {
                 margin: 0;
                 &:after {
@@ -101,7 +100,7 @@ body {
                 &:after {
                     display: block;
                     content: "";
-                    margin: 2rem auto;
+                    margin: 0 auto 2.5rem;
                     border-bottom: 4px solid $blue;
                     width: 30px;
                 }
@@ -119,14 +118,16 @@ body {
             grid-column: span 12;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            h5 {
-                font-size: 2.441rem;
-                &:after {
-                    display: block;
-                    content: "";
-                    margin: 0 auto 2.5rem;
-                    border-bottom: 4px solid $blue;
-                    width: 30px;
+            .ceremony, .reception {
+                h5 {
+                    font-size: 2.441rem;
+                    &:after {
+                        display: block;
+                        content: "";
+                        margin: 0 auto 2.5rem;
+                        border-bottom: 4px solid $blue;
+                        width: 30px;
+                    }
                 }
             }
             .time {
@@ -146,7 +147,7 @@ body {
                 background-repeat: no-repeat;
                 height: 100vh;
                 text-shadow: 1px 1px 5px rgba($black, 0.5);
-                box-sizing: border-box;
+
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
@@ -170,7 +171,7 @@ body {
             }
             .location {
                 grid-column: span 12;
-                box-sizing: border-box;
+
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
@@ -178,7 +179,7 @@ body {
             }
             .ceremony {
                 grid-column: span 12;
-                box-sizing: border-box;
+
                 padding: 20px;
                 p {
                     margin-top: 0.2rem;
@@ -190,7 +191,7 @@ body {
             }
             .reception {
                 grid-column: span 12;
-                box-sizing: border-box;
+
                 padding: 20px;
                 p {
                     margin-top: 0.2rem;
@@ -202,7 +203,7 @@ body {
             }
             .hotels {
                 grid-column: span 12;
-                box-sizing: border-box;
+
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
@@ -223,31 +224,49 @@ body {
                         justify-self: center;
                     }
                     li {
-                        color: $white;
-                        background-color: $black;
-                        &.alay {
-                            background-image: url("images/party_alay.jpg"); 
+                        display: grid;
+                        grid-template-rows: auto;
+                        span {
+                            display: block;
+                            min-height: 8rem;
+                            background-size: cover;
+                            &.alay {
+                                background-image: url("images/party_alay.jpg"); 
+                            }
+                            &.kelly {
+                                background-image: url("images/party_kelly.jpg"); 
+                            }
+                            &.douglas {
+                                background-image: url("images/party_douglas.jpg"); 
+                            }
+                            &.francis {
+                                background-image: url("images/party_francis.jpg"); 
+                            }
+                            &.william {
+                                background-image: url("images/party_william.jpg"); 
+                            }
+                            &.dustin {
+                                background-image: url("images/party_dustin.jpg"); 
+                            }
+                            &.iris {
+                                background-image: url("images/party_iris.jpg"); 
+                            }
+                            &.zach {
+                                background-image: url("images/party_zach.jpg"); 
+                            }
                         }
-                        &.kelly {
-                            background-image: url("images/party_kelly.jpg"); 
+                        strong {
+                            font-family: 'Poppins', sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            margin: 0;
                         }
-                        &.douglas {
-                            background-image: url("images/party_douglas.jpg"); 
-                        }
-                        &.francis {
-                            background-image: url("images/party_francis.jpg"); 
-                        }
-                        &.william {
-                            background-image: url("images/party_william.jpg"); 
-                        }
-                        &.dustin {
-                            background-image: url("images/party_dustin.jpg"); 
-                        }
-                        &.iris {
-                            background-image: url("images/party_iris.jpg"); 
-                        }
-                        &.zach {
-                            background-image: url("images/party_zach.jpg"); 
+                        em {
+                            font-family: 'Lora', serif;
+                            font-style: italic;
+                            font-weight: 400;
+                            margin: 0;
+                            color: $grey-dark;
                         }
                     }
                 }
@@ -264,7 +283,6 @@ body {
             background-position: 45% 0;
             background-repeat: no-repeat;
             height: 100vh;
-            box-sizing: border-box;
             text-shadow: 1px 1px 5px rgba($black, 0.5);
             padding: 60px 20px;
             @media only screen and (min-width: 768px) {
@@ -290,7 +308,6 @@ body {
         #registry {
             grid-column: span 12;
             display: grid;
-            box-sizing: border-box;
             padding: 60px 20px;
             @media only screen and (min-width: 768px) {
                 grid-column: 3 / 11;
@@ -304,28 +321,39 @@ body {
                     grid-template-columns: repeat(3, 1fr);
                   }
                 li {
-                    display: inline-block;
                     background-color: $white;
-                    background-size: contain;
+                    background-size: auto;
                     background-position: center;
                     background-repeat: no-repeat;
-                    border: 1px solid $grey-light;
-                    padding: 1rem;
-                    min-height: 5rem;
+                    a {
+                        display: block;
+                        text-indent: -99999px;
+                        padding: 4rem 2rem;
+                        border: 1px solid $grey-light;
+                        &:hover {
+                            border: 1px solid $black;
+                            background-size: auto;
+                        }
+                    }
                     &.crate_barrel {
-                        background-image: url("images/reg_crate_barrel.png"); 
+                        background-image: url("images/reg_crate_barrel.png");
+                        background-size: 65% auto;
                     }
                     &.west_elm {
-                        background-image: url("images/reg_west_elm.png"); 
+                        background-image: url("images/reg_west_elm.png");
+                        background-size: 60% auto;
                     }
                     &.cb2 {
-                        background-image: url("images/reg_cb2.png"); 
+                        background-image: url("images/reg_cb2.png");
+                        background-size: 35% auto;
                     }
                     &.amazon {
-                        background-image: url("images/reg_amazon.png"); 
+                        background-image: url("images/reg_amazon.png");
+                        background-size: 45% auto;
                     }
                     &.williams_sonoma {
-                        background-image: url("images/reg_williams_sonoma.png"); 
+                        background-image: url("images/reg_williams_sonoma.png");
+                        background-size: 75% auto;
                     }
                 }
             }
@@ -333,7 +361,6 @@ body {
         #photos {
             grid-column: span 12;
             background-color: $blue-lightest;
-            box-sizing: border-box;
             padding: 60px 20px;
             @media only screen and (min-width: 768px) {
                 padding: 80px 40px;
@@ -341,7 +368,6 @@ body {
         }
         footer {
             grid-column: span 12;
-            box-sizing: border-box;
             background-color: $grey-light;
             padding: 20px;
             @media only screen and (min-width: 768px) {

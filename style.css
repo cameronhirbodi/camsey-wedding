@@ -1,15 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-html body {
-  margin: 0;
-  padding: 0;
-}
-
 html body ul {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -55,8 +55,6 @@ body .wrapper #main {
   background-repeat: no-repeat;
   height: 100vh;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 @media only screen and (min-width: 768px) {
@@ -143,16 +141,15 @@ body .wrapper #main #title h2 {
 }
 
 body .wrapper #story {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 6;
-  grid-column: 4 / 10;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  grid-column: span 12;
   padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #story {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4 / 10;
     padding: 80px 40px;
   }
 }
@@ -182,7 +179,7 @@ body .wrapper #story h3 {
 body .wrapper #story h3:after {
   display: block;
   content: "";
-  margin: 2rem auto;
+  margin: 0 auto 2.5rem;
   border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
@@ -204,11 +201,11 @@ body .wrapper #wedding {
       grid-template-columns: repeat(12, 1fr);
 }
 
-body .wrapper #wedding h5 {
+body .wrapper #wedding .ceremony h5, body .wrapper #wedding .reception h5 {
   font-size: 2.441rem;
 }
 
-body .wrapper #wedding h5:after {
+body .wrapper #wedding .ceremony h5:after, body .wrapper #wedding .reception h5:after {
   display: block;
   content: "";
   margin: 0 auto 2.5rem;
@@ -239,8 +236,6 @@ body .wrapper #wedding header {
   background-repeat: no-repeat;
   height: 100vh;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 60px 20px;
 }
 
@@ -273,8 +268,6 @@ body .wrapper #wedding header h4 {
 
 body .wrapper #wedding .location {
   grid-column: span 12;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 60px 20px;
 }
 
@@ -286,8 +279,6 @@ body .wrapper #wedding .location {
 
 body .wrapper #wedding .ceremony {
   grid-column: span 12;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 20px;
 }
 
@@ -306,8 +297,6 @@ body .wrapper #wedding .ceremony p {
 
 body .wrapper #wedding .reception {
   grid-column: span 12;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 20px;
 }
 
@@ -326,8 +315,6 @@ body .wrapper #wedding .reception p {
 
 body .wrapper #wedding .hotels {
   grid-column: span 12;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 60px 20px;
 }
 
@@ -364,40 +351,63 @@ body .wrapper #wedding .bridal_party ul {
 }
 
 body .wrapper #wedding .bridal_party ul li {
-  color: #fff;
-  background-color: #000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
-body .wrapper #wedding .bridal_party ul li.alay {
+body .wrapper #wedding .bridal_party ul li span {
+  display: block;
+  min-height: 8rem;
+  background-size: cover;
+}
+
+body .wrapper #wedding .bridal_party ul li span.alay {
   background-image: url("images/party_alay.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li.kelly {
+body .wrapper #wedding .bridal_party ul li span.kelly {
   background-image: url("images/party_kelly.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li.douglas {
+body .wrapper #wedding .bridal_party ul li span.douglas {
   background-image: url("images/party_douglas.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li.francis {
+body .wrapper #wedding .bridal_party ul li span.francis {
   background-image: url("images/party_francis.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li.william {
+body .wrapper #wedding .bridal_party ul li span.william {
   background-image: url("images/party_william.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li.dustin {
+body .wrapper #wedding .bridal_party ul li span.dustin {
   background-image: url("images/party_dustin.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li.iris {
+body .wrapper #wedding .bridal_party ul li span.iris {
   background-image: url("images/party_iris.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li.zach {
+body .wrapper #wedding .bridal_party ul li span.zach {
   background-image: url("images/party_zach.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li strong {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+body .wrapper #wedding .bridal_party ul li em {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  color: #686868;
 }
 
 body .wrapper #rsvp {
@@ -416,8 +426,6 @@ body .wrapper #rsvp {
   background-position: 45% 0;
   background-repeat: no-repeat;
   height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   padding: 60px 20px;
 }
@@ -453,8 +461,6 @@ body .wrapper #registry {
   grid-column: span 12;
   display: -ms-grid;
   display: grid;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 60px 20px;
 }
 
@@ -483,41 +489,52 @@ body .wrapper #registry ul {
 }
 
 body .wrapper #registry ul li {
-  display: inline-block;
   background-color: #fff;
-  background-size: contain;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+body .wrapper #registry ul li a {
+  display: block;
+  text-indent: -99999px;
+  padding: 4rem 2rem;
   border: 1px solid #E1E5E8;
-  padding: 1rem;
-  min-height: 5rem;
+}
+
+body .wrapper #registry ul li a:hover {
+  border: 1px solid #000;
+  background-size: auto;
 }
 
 body .wrapper #registry ul li.crate_barrel {
   background-image: url("images/reg_crate_barrel.png");
+  background-size: 65% auto;
 }
 
 body .wrapper #registry ul li.west_elm {
   background-image: url("images/reg_west_elm.png");
+  background-size: 60% auto;
 }
 
 body .wrapper #registry ul li.cb2 {
   background-image: url("images/reg_cb2.png");
+  background-size: 35% auto;
 }
 
 body .wrapper #registry ul li.amazon {
   background-image: url("images/reg_amazon.png");
+  background-size: 45% auto;
 }
 
 body .wrapper #registry ul li.williams_sonoma {
   background-image: url("images/reg_williams_sonoma.png");
+  background-size: 75% auto;
 }
 
 body .wrapper #photos {
   grid-column: span 12;
   background-color: #F2F3F4;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 60px 20px;
 }
 
@@ -529,8 +546,6 @@ body .wrapper #photos {
 
 body .wrapper footer {
   grid-column: span 12;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: #E1E5E8;
   padding: 20px;
 }
