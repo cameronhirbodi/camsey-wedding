@@ -225,6 +225,30 @@ body {
                     li {
                         color: $white;
                         background-color: $black;
+                        &.alay {
+                            background-image: url("images/party_alay.jpg"); 
+                        }
+                        &.kelly {
+                            background-image: url("images/party_kelly.jpg"); 
+                        }
+                        &.douglas {
+                            background-image: url("images/party_douglas.jpg"); 
+                        }
+                        &.francis {
+                            background-image: url("images/party_francis.jpg"); 
+                        }
+                        &.william {
+                            background-image: url("images/party_william.jpg"); 
+                        }
+                        &.dustin {
+                            background-image: url("images/party_dustin.jpg"); 
+                        }
+                        &.iris {
+                            background-image: url("images/party_iris.jpg"); 
+                        }
+                        &.zach {
+                            background-image: url("images/party_zach.jpg"); 
+                        }
                     }
                 }
             }
@@ -282,6 +306,21 @@ body {
                 li {
                     color: $white;
                     background-color: $black;
+                    &.crate_barrel {
+                        background-image: url("images/reg_crate_barrel.png"); 
+                    }
+                    &.west_elm {
+                        background-image: url("images/reg_west_elm.png"); 
+                    }
+                    &.cb2 {
+                        background-image: url("images/reg_cb2.png"); 
+                    }
+                    &.amazon {
+                        background-image: url("images/reg_amazon.png"); 
+                    }
+                    &.williams_sonoma {
+                        background-image: url("images/reg_williams_sonoma.png"); 
+                    }
                 }
             }
         }

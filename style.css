@@ -368,6 +368,38 @@ body .wrapper #wedding .bridal_party ul li {
   background-color: #000;
 }
 
+body .wrapper #wedding .bridal_party ul li.alay {
+  background-image: url("images/party_alay.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li.kelly {
+  background-image: url("images/party_kelly.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li.douglas {
+  background-image: url("images/party_douglas.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li.francis {
+  background-image: url("images/party_francis.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li.william {
+  background-image: url("images/party_william.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li.dustin {
+  background-image: url("images/party_dustin.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li.iris {
+  background-image: url("images/party_iris.jpg");
+}
+
+body .wrapper #wedding .bridal_party ul li.zach {
+  background-image: url("images/party_zach.jpg");
+}
+
 body .wrapper #rsvp {
   grid-column: span 12;
   display: -ms-grid;
@@ -453,6 +485,26 @@ body .wrapper #registry ul {
 body .wrapper #registry ul li {
   color: #fff;
   background-color: #000;
+}
+
+body .wrapper #registry ul li.crate_barrel {
+  background-image: url("images/reg_crate_barrel.png");
+}
+
+body .wrapper #registry ul li.west_elm {
+  background-image: url("images/reg_west_elm.png");
+}
+
+body .wrapper #registry ul li.cb2 {
+  background-image: url("images/reg_cb2.png");
+}
+
+body .wrapper #registry ul li.amazon {
+  background-image: url("images/reg_amazon.png");
+}
+
+body .wrapper #registry ul li.williams_sonoma {
+  background-image: url("images/reg_williams_sonoma.png");
 }
 
 body .wrapper #photos {
