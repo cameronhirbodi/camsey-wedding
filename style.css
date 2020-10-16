@@ -1,15 +1,19 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
   margin: 0;
   padding: 0;
 }
 
-body ul {
+html body ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-body ul li {
+html body ul li {
   display: inline-block;
 }
 
