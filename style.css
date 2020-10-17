@@ -494,6 +494,19 @@ body .wrapper #registry {
   }
 }
 
+body .wrapper #registry h3 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+body .wrapper #registry h3:after {
+  display: block;
+  content: "";
+  margin: 0 auto 2.5rem;
+  border-bottom: 4px solid #A6BBCE;
+  width: 30px;
+}
+
 body .wrapper #registry ul {
   display: -ms-grid;
   display: grid;
