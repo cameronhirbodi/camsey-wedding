@@ -11,7 +11,7 @@ body {
             background-size: cover;
             background-position: 72% 0;
             background-repeat: no-repeat;
-            height: 100vh;
+            height: 95vh;
             padding: 20px;
             @media only screen and (min-width: 768px) {
                 padding: 40px;
@@ -145,7 +145,7 @@ body {
                 background-size: cover;
                 background-position: 45% 0;
                 background-repeat: no-repeat;
-                height: 100vh;
+                height: 95vh;
                 text-shadow: 1px 1px 5px rgba($black, 0.5);
 
                 padding: 60px 20px;
@@ -229,6 +229,8 @@ body {
                         display: grid;
                         span {
                             display: block;
+                            width: auto;
+                            height: auto;
                             min-height: 12rem;
                             margin-bottom: 1rem;
                             background-size: cover;
@@ -292,7 +294,7 @@ body {
             background-size: cover;
             background-position: 45% 0;
             background-repeat: no-repeat;
-            height: 100vh;
+            height: 95vh;
             text-shadow: 1px 1px 5px rgba($black, 0.5);
             padding: 60px 20px;
             @media only screen and (min-width: 768px) {
