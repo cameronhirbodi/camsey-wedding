@@ -36,7 +36,7 @@ body {
                         }
                     }
                 }
-                button {
+                .button {
                     float: right;
                 }
             }
@@ -173,6 +173,9 @@ body {
             .location {
                 grid-column: span 12;
                 padding: 60px 20px;
+                p {
+                    margin-bottom: 2rem;
+                }
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
                   }
