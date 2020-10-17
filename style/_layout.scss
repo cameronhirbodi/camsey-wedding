@@ -97,6 +97,7 @@ body {
             h3 {
                 font-family: 'Lora', serif;
                 font-style: italic;
+                line-height: 2.5;
                 &:after {
                     display: block;
                     content: "";
@@ -121,6 +122,7 @@ body {
             .ceremony, .reception {
                 h5 {
                     font-size: 2.441rem;
+                    line-height: 1.5;
                     &:after {
                         display: block;
                         content: "";
@@ -147,7 +149,6 @@ body {
                 background-repeat: no-repeat;
                 height: 95vh;
                 text-shadow: 1px 1px 5px rgba($black, 0.5);
-
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
@@ -171,7 +172,6 @@ body {
             }
             .location {
                 grid-column: span 12;
-
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
@@ -179,7 +179,6 @@ body {
             }
             .ceremony {
                 grid-column: span 12;
-
                 padding: 20px;
                 p {
                     margin-top: 0.2rem;
@@ -203,7 +202,6 @@ body {
             }
             .hotels {
                 grid-column: span 12;
-
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
@@ -328,6 +326,7 @@ body {
               h3 {
                 font-family: 'Lora', serif;
                 font-style: italic;
+                line-height: 2.5;
                 &:after {
                     display: block;
                     content: "";
