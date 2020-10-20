@@ -17,27 +17,36 @@ body {
                 padding: 40px;
               }
             nav {
-                grid-row: 1;
-                vertical-align: middle;
-                a {
-                    color: $white;
+                &.desktop {
+                    display: none;
                 }
-                ul {
-                    margin: 0.5rem 0;
-                    text-transform: uppercase;
-                    text-shadow: 1px 1px 2px rgba($black, 0.5);
-                    font-size: 0.8rem;
-                    letter-spacing: 0.2rem;
-                    float: left;
-                    li {
-                        margin-right: 1.5rem;
-                        &:last-child {
-                            margin-right: 0;
+                @media only screen and (min-width: 768px) {
+                    &.mobile {
+                        display: none;
+                    }
+                    &.desktop {
+                        display: block;
+                        a {
+                            color: $white;
+                        }
+                        ul {
+                            margin: 0.5rem 0;
+                            text-transform: uppercase;
+                            text-shadow: 1px 1px 2px rgba($black, 0.5);
+                            font-size: 0.8rem;
+                            letter-spacing: 0.2rem;
+                            float: left;
+                            li {
+                                margin-right: 1.5rem;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                        .button {
+                            float: right;
                         }
                     }
-                }
-                .button {
-                    float: right;
                 }
             }
             #title {
