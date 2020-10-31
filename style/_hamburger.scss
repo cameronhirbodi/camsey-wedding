@@ -1,8 +1,7 @@
 html {
   #mobile {
-    display: block;
     background: transparent;
-    position: relative;
+    position: absolute;
     width: 100%;
     padding: 2rem;
     top: 0;
@@ -10,8 +9,8 @@ html {
     //Style the hamburger menu toggle
     label .hamburger {
       position: absolute;
-      top: 1rem;
-      right: 0;
+      top: 2rem;
+      right: 1rem;
       width: 30px;
       height: 2px;
       background: $white;
@@ -71,6 +70,7 @@ html {
       -webkit-transition: opacity 1s ease-in-out;
       transition: opacity 1s ease-in-out;
       opacity: 1; 
+      height: 100%;
     }
 
     //Style the fullscreen nav menu
@@ -106,7 +106,7 @@ html {
 
     label a {
       display: block;
-      margin-bottom: 2em;
+      margin-bottom: 3em;
       color: $white;
       text-decoration: none;
       font-size: 1.563rem;  

@@ -669,9 +669,8 @@ html body .script {
 }
 
 html #mobile {
-  display: block;
   background: transparent;
-  position: relative;
+  position: absolute;
   width: 100%;
   padding: 2rem;
   top: 0;
@@ -680,8 +679,8 @@ html #mobile {
 
 html #mobile label .hamburger {
   position: absolute;
-  top: 1rem;
-  right: 0;
+  top: 2rem;
+  right: 1rem;
   width: 30px;
   height: 2px;
   background: #fff;
@@ -742,6 +741,7 @@ html #mobile label input:checked + .menu + ul {
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   opacity: 1;
+  height: 100%;
 }
 
 html #mobile label .menu {
@@ -778,7 +778,7 @@ html #mobile label ul li {
 
 html #mobile label a {
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   color: #fff;
   text-decoration: none;
   font-size: 1.563rem;
