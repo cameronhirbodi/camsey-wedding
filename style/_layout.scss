@@ -17,14 +17,14 @@ body {
                 padding: 40px;
               }
             nav {
-                &.desktop {
+                &#desktop {
                     display: none;
                 }
                 @media only screen and (min-width: 768px) {
-                    &.mobile {
+                    &#mobile {
                         display: none;
                     }
-                    &.desktop {
+                    &#desktop {
                         display: block;
                         a {
                             color: $white;

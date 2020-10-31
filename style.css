@@ -65,21 +65,21 @@ body .wrapper #main {
   }
 }
 
-body .wrapper #main nav.desktop {
+body .wrapper #main nav#desktop {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #main nav.mobile {
+  body .wrapper #main nav#mobile {
     display: none;
   }
-  body .wrapper #main nav.desktop {
+  body .wrapper #main nav#desktop {
     display: block;
   }
-  body .wrapper #main nav.desktop a {
+  body .wrapper #main nav#desktop a {
     color: #fff;
   }
-  body .wrapper #main nav.desktop ul {
+  body .wrapper #main nav#desktop ul {
     margin: 0.5rem 0;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -87,13 +87,13 @@ body .wrapper #main nav.desktop {
     letter-spacing: 0.2rem;
     float: left;
   }
-  body .wrapper #main nav.desktop ul li {
+  body .wrapper #main nav#desktop ul li {
     margin-right: 1.5rem;
   }
-  body .wrapper #main nav.desktop ul li:last-child {
+  body .wrapper #main nav#desktop ul li:last-child {
     margin-right: 0;
   }
-  body .wrapper #main nav.desktop .button {
+  body .wrapper #main nav#desktop .button {
     float: right;
   }
 }
@@ -668,21 +668,31 @@ html body .script {
   color: #686868;
 }
 
-.mobile label .hamburger {
+html #mobile {
+  display: block;
+  background: transparent;
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  top: 0;
+  right: 0;
+}
+
+html #mobile label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
+  top: 1rem;
+  right: 0;
   width: 30px;
   height: 2px;
-  background: #000;
-  display: block;
+  background: #fff;
   -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
-.mobile label .hamburger:after, .mobile label .hamburger:before {
+html #mobile label .hamburger:before,
+html #mobile label .hamburger:after {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   content: "";
@@ -690,69 +700,71 @@ html body .script {
   display: block;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #fff;
 }
 
-.mobile label .hamburger:before {
+html #mobile label .hamburger:before {
   top: -10px;
 }
 
-.mobile label .hamburger:after {
+html #mobile label .hamburger:after {
   bottom: -10px;
 }
 
-.mobile label input {
+html #mobile label input {
   display: none;
 }
 
-.mobile label input:checked + .menu {
-  -webkit-box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
-          box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
-  border-radius: 0;
+html #mobile label input:checked + .menu {
+  -webkit-box-shadow: 0 0 0 100vw #041132, 0 0 0 100vh #041132;
+          box-shadow: 0 0 0 100vw #041132, 0 0 0 100vh #041132;
+  border-radius: 50%;
 }
 
-.mobile label input:checked + .menu .hamburger {
+html #mobile label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.mobile label input:checked + .menu .hamburger:after {
+html #mobile label input:checked + .menu .hamburger:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
 }
 
-.mobile label input:checked + .menu .hamburger:before {
+html #mobile label input:checked + .menu .hamburger:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
 }
 
-.mobile label input:checked + .menu + ul {
+html #mobile label input:checked + .menu + ul {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
   opacity: 1;
 }
 
-.mobile label .menu {
+html #mobile label .menu {
   position: absolute;
-  right: -100px;
-  top: -100px;
+  color: #fff;
+  right: 0;
+  top: 0;
   z-index: 100;
-  width: 200px;
-  height: 200px;
-  background: #fff;
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 50%;
+  background: #041132;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  -webkit-box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-          box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+  -webkit-box-shadow: 0 0 0 0 #041132, 0 0 0 0 #041132;
+          box-shadow: 0 0 0 0 #041132, 0 0 0 0 #041132;
   cursor: pointer;
 }
 
-.mobile label ul {
+html #mobile label ul {
   z-index: 200;
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 100%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -760,9 +772,16 @@ html body .script {
   transition: .25s 0s ease-in-out;
 }
 
-.mobile label a {
-  margin-bottom: 1em;
+html #mobile label ul li {
   display: block;
-  color: #000;
+}
+
+html #mobile label a {
+  display: block;
+  margin-bottom: 2em;
+  color: #fff;
   text-decoration: none;
+  font-size: 1.563rem;
+  font-family: 'Lora', serif;
+  font-style: italic;
 }

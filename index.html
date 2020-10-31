@@ -3,11 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Peddana&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <header id="main">
-        <nav class="desktop">
+        <nav id="desktop">
             <ul>
                 <li><a href="#story">Our Story</a></li>
                 <li><a href="#wedding">The Wedding</a></li>
@@ -16,7 +17,7 @@
             <a class="button" href="#" target="_blank" disabled>RSVP Soon</a>
           </nav>
 
-          <nav class="mobile">
+          <nav id="mobile">
             <label>
               <input type="checkbox">
               <span class="menu">
@@ -122,8 +123,20 @@
       </footer>
     </div>  
     <script>
-    var year = new Date();
-    document.getElementById('dtText').innerHTML = year.getFullYear();
+      $(document).scroll(function() {
+                if($(window).scrollTop() > 50){
+                  $("#mobile").css("position","fixed");
+                  $("#mobile").css("background","black");
+
+                }else if($(window).scrollTop() < 50){
+                  $("#mobile").css("position","relative");
+                  $("#mobile").css("background","transparent");
+
+                }
+          });
+
+      var year = new Date();
+      document.getElementById('dtText').innerHTML = year.getFullYear();
     </script>
   </body>
 </html>
