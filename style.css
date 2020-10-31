@@ -717,7 +717,9 @@ html #mobile label input {
 html #mobile label input:checked + .menu {
   -webkit-box-shadow: 0 0 0 100vw #041132, 0 0 0 100vh #041132;
           box-shadow: 0 0 0 100vw #041132, 0 0 0 100vh #041132;
-  border-radius: 50%;
+  border-radius: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 html #mobile label input:checked + .menu .hamburger {
@@ -747,11 +749,13 @@ html #mobile label input:checked + .menu + ul {
 html #mobile label .menu {
   position: absolute;
   color: #fff;
-  right: 0;
-  top: 0;
+  right: -10px;
+  top: -10px;
   z-index: 100;
-  border-radius: 50%;
   background: #041132;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   -webkit-box-shadow: 0 0 0 0 #041132, 0 0 0 0 #041132;

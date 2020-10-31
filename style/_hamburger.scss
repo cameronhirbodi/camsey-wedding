@@ -41,12 +41,13 @@ html {
     }
     
     label input { 
-      display: none; 
+      display: none;
     }
     
     label input:checked + .menu {
       box-shadow: 0 0 0 100vw $blue-dark, 0 0 0 100vh $blue-dark;
-      border-radius: 50%;
+      border-radius: 0;
+      transition: all 0.25s ease-in-out;
     }
     
     label input:checked + .menu .hamburger {
@@ -77,11 +78,13 @@ html {
     label .menu {
       position: absolute;
       color: $white;
-      right: 0;
-      top: 0;
+      right: -10px;
+      top: -10px;
       z-index: 100;
-      border-radius: 50%;
       background: $blue-dark;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
       -webkit-transition: .5s ease-in-out;
       transition: .5s ease-in-out;
       box-shadow: 0 0 0 0 $blue-dark, 0 0 0 0 $blue-dark;
