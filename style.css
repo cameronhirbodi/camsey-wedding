@@ -6,7 +6,13 @@
 }
 
 html {
+  overflow-x: 0;
   scroll-behavior: smooth;
+}
+
+html body {
+  position: relative;
+  overflow-x: 0;
 }
 
 html body ul {
@@ -604,7 +610,7 @@ body .wrapper #photos h3:after {
 }
 
 body .wrapper #photos .glider-contain .glider {
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 body .wrapper #photos .glider-contain .glider li {
