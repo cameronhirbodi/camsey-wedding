@@ -128,7 +128,6 @@
             <div>Image 7</div>
             <div>Image 8</div>
           </div>
-        
           <button aria-label="Previous" class="glider-prev">«</button>
           <button aria-label="Next" class="glider-next">»</button>
           <div role="tablist" class="dots"></div>
@@ -140,6 +139,7 @@
       </footer>
     </div>  
     <script>
+      //Dynamic Navigation
       $(document).scroll(function() {
                 if($(window).scrollTop() > 50){
                   $("#mobile").css("position","fixed");
@@ -152,20 +152,22 @@
                 }
           });
 
-      var year = new Date();
-      document.getElementById('dtText').innerHTML = year.getFullYear();
-
+      //Image Carousel
       window.addEventListener('load', function(){
         new Glider(document.querySelector('.glider'), {
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  draggable: true,
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  }
-})
-      })
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          draggable: true,
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          }
+        })
+      });
+      
+      //Dynamic Footer Date
+      var year = new Date();
+      document.getElementById('dtText').innerHTML = year.getFullYear();
     </script>
   </body>
 </html>
