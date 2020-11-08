@@ -399,6 +399,18 @@ body {
             @media only screen and (min-width: 768px) {
                 padding: 80px 40px;
               }
+            h3 {
+                font-family: 'Lora', serif;
+                font-style: italic;
+                line-height: 2.5;
+                &:after {
+                    display: block;
+                    content: "";
+                    margin: 0 auto 2.5rem;
+                    border-bottom: 4px solid $blue;
+                    width: 30px;
+                }
+            }
         }
         footer {
             grid-column: span 12;
