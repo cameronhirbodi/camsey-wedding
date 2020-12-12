@@ -9,8 +9,8 @@ html {
     //Style the hamburger menu toggle
     label .hamburger {
       position: absolute;
-      top: 2rem;
-      right: 1rem;
+      top: 2.6rem;
+      right: 1.5rem;
       width: 30px;
       height: 2px;
       background: $white;
@@ -78,8 +78,8 @@ html {
     label .menu {
       position: absolute;
       color: $white;
-      right: 0;
-      top: 0;
+      right: -10px;
+      top: -10px;
       z-index: 100;
       background: $blue-dark;
       border-radius: 50%;

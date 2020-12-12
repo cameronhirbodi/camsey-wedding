@@ -718,8 +718,8 @@ html #mobile {
 
 html #mobile label .hamburger {
   position: absolute;
-  top: 2rem;
-  right: 1rem;
+  top: 2.6rem;
+  right: 1.5rem;
   width: 30px;
   height: 2px;
   background: #fff;
@@ -788,8 +788,8 @@ html #mobile label input:checked + .menu + ul {
 html #mobile label .menu {
   position: absolute;
   color: #fff;
-  right: 0;
-  top: 0;
+  right: -10px;
+  top: -10px;
   z-index: 100;
   background: #041132;
   border-radius: 50%;
