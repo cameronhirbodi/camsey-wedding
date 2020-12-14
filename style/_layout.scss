@@ -80,6 +80,11 @@ body {
                     font-size: 0.8rem;
                     letter-spacing: 0.4rem;
                 }
+                .hide-desk {
+                    @media only screen and (min-width: 768px) {
+                        display: none;
+                    }
+                }
             }
         }
         #story {
@@ -169,7 +174,7 @@ body {
                     letter-spacing: 0.5rem;
                     @media only screen and (min-width: 768px) {
                         font-size: 4.768em;
-                      }
+                    }
                 }
                 h4 {
                     font-size: 2.441rem;

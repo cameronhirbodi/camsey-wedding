@@ -150,6 +150,12 @@ body .wrapper #main #title h2 {
   letter-spacing: 0.4rem;
 }
 
+@media only screen and (min-width: 768px) {
+  body .wrapper #main #title .hide-desk {
+    display: none;
+  }
+}
+
 body .wrapper #story {
   grid-column: span 12;
   padding: 60px 20px;
