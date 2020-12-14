@@ -10,6 +10,8 @@ html {
     body {
         position: relative;
         overflow-x: 0;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         ul {
             list-style-type: none;
             li {
