@@ -116,14 +116,14 @@
           <div class="splide">
             <div class="splide__track">
               <ul class="splide__list">
-                <li><a href="#"><img src="images/gallery/image_01.jpg"></a></li>
-                <li><a href="#"><img src="images/gallery/image_02.jpg"></a></li>
-                <li><a href="#"><img src="images/gallery/image_03.jpg"></a></li>
-                <li><a href="#"><img src="images/gallery/image_04.jpg"></a></li>
-                <li><a href="#"><img src="images/gallery/image_05.jpg"></a></li>
-                <li><a href="#"><img src="images/gallery/image_06.jpg"></a></li>
-                <li><a href="#"><img src="images/gallery/image_07.jpg"></a></li>
-                <li><a href="#"><img src="images/gallery/image_08.jpg"></a></li>
+                <li class="splide__slide"><img src="images/gallery/image_01.jpg"></li>
+                <li class="splide__slide"><img src="images/gallery/image_02.jpg"></li>
+                <li class="splide__slide"><img src="images/gallery/image_03.jpg"></li>
+                <li class="splide__slide"><img src="images/gallery/image_04.jpg"></li>
+                <li class="splide__slide"><img src="images/gallery/image_05.jpg"></li>
+                <li class="splide__slide"><img src="images/gallery/image_06.jpg"></li>
+                <li class="splide__slide"><img src="images/gallery/image_07.jpg"></li>
+                <li class="splide__slide"><img src="images/gallery/image_08.jpg"></li>
               </ul>
             </div>
           </div>
@@ -149,6 +149,14 @@
                 }
           });
 
+      //Splide Carousel
+      new Splide( '.splide', {
+        height   : '20rem',
+      type     : 'loop',
+      autoWidth: false,
+      trimSpace: true,
+    } ).mount();
+
       //Back to top button:
         mybutton = document.getElementById("topBtn");
 
@@ -163,7 +171,7 @@
           }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
+       // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
           document.body.scrollTop = 0; // For Safari
           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -172,11 +180,6 @@
       //Dynamic Footer Date
       var year = new Date();
       document.getElementById('dtText').innerHTML = year.getFullYear();
-    </script>
-    <script>
-      document.addEventListener( 'DOMContentLoaded', function () {
-        new Splide( '.splide' ).mount();
-      } );
     </script>
   </body>
 </html>

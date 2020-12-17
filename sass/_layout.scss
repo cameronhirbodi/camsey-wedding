@@ -476,6 +476,17 @@ body {
                     }
                 }
             }
+            .splide {
+                margin: 0 auto;
+                max-width: 480px;
+                .splide__slide {
+                    img {
+                        object-fit: cover; /* cover image */
+                        object-position: center; /* Center the image within the element */
+                        width: 100%;
+                    }
+                }
+            }
         }
         #topBtn {
             display: none; /* Hidden by default */
