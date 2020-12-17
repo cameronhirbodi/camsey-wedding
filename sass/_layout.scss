@@ -23,6 +23,17 @@ body {
                 left: 0;
                 top: 0;
                 z-index: 100;
+                .desktop {
+                    display: none;
+                }
+                @media only screen and (min-width: 768px) {
+                    .mobile {
+                        display: none;
+                    }
+                    .desktop {
+                        display: block;
+                    }
+                }
                 ul {
                     margin: 1rem 0;
                     text-transform: uppercase;

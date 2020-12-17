@@ -128,6 +128,19 @@ body .wrapper #main nav {
   z-index: 100;
 }
 
+body .wrapper #main nav .desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #main nav .mobile {
+    display: none;
+  }
+  body .wrapper #main nav .desktop {
+    display: block;
+  }
+}
+
 body .wrapper #main nav ul {
   margin: 1rem 0;
   text-transform: uppercase;
