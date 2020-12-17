@@ -121,9 +121,10 @@ body .wrapper #main {
 }
 
 body .wrapper #main nav {
+  position: absolute;
   width: 100%;
-  margin-left: -20px;
-  margin-top: -20px;
+  left: 0;
+  top: 0;
 }
 
 body .wrapper #main nav ul {
@@ -176,9 +177,6 @@ body .wrapper #main nav#desktop {
   }
   body .wrapper #main nav#desktop {
     display: block;
-    width: calc(100% + 80px);
-    margin-left: -40px;
-    margin-top: -40px;
   }
   body .wrapper #main nav#desktop ul {
     margin: 2rem 0;
@@ -684,11 +682,11 @@ body .wrapper #topBtn {
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: none;
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #041132;
+  background-color: rgba(0, 0, 0, 0.5);
   /* Set a background color */
   color: #fff;
   /* Text color */
@@ -698,11 +696,13 @@ body .wrapper #topBtn {
   /* Some padding */
   font-size: 0.7rem;
   /* Increase font size */
+  transition: background-color 500ms;
 }
 
 body .wrapper #topBtn:hover {
-  background-color: #4575f0;
-  /* Add a dark-grey background on hover */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Set a background color */
+  transition: background-color 500ms;
 }
 
 body .wrapper #topBtn img {
