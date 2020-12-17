@@ -125,12 +125,13 @@ body .wrapper #main nav {
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 100;
 }
 
 body .wrapper #main nav ul {
   margin: 1rem 0;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   letter-spacing: 0.2rem;
 }
 
@@ -155,35 +156,36 @@ body .wrapper #main nav ul li a img {
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
 }
 
-body .wrapper #main nav#desktop {
-  display: none;
-}
-
 @media only screen and (min-width: 360px) {
+  body .wrapper #main nav ul {
+    font-size: 0.65rem;
+  }
   body .wrapper #main nav ul li {
     margin-right: 2rem;
   }
 }
 
 @media only screen and (min-width: 480px) {
+  body .wrapper #main nav ul {
+    font-size: 0.7rem;
+  }
   body .wrapper #main nav ul li {
     margin-right: 3rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #main nav#mobile {
-    display: none;
+  body .wrapper #main nav ul {
+    font-size: 0.8rem;
   }
-  body .wrapper #main nav#desktop {
-    display: block;
-  }
-  body .wrapper #main nav#desktop ul {
-    margin: 2rem 0;
+  body .wrapper #main nav ul li {
+    margin-right: 4rem;
   }
 }
 
-body .wrapper #main #title {
+body .wrapper #title {
+  position: relative;
+  top: 5rem;
   grid-row: 3;
   height: 100%;
   clear: both;
@@ -192,33 +194,27 @@ body .wrapper #main #title {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-body .wrapper #main #title .logo {
-  display: none;
+body .wrapper #title .logo {
+  display: inline-block;
   width: 5rem;
   height: 5rem;
   margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
-  body .wrapper #main #title .logo {
-    display: inline-block;
-  }
-}
-
-body .wrapper #main #title h1 {
+body .wrapper #title h1 {
   font-size: 3.815rem;
-  line-height: 0.9;
+  line-height: 0.8;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #main #title h1 {
+  body .wrapper #title h1 {
     font-size: 4.768em;
   }
 }
 
-body .wrapper #main #title h2 {
+body .wrapper #title h2 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -226,7 +222,7 @@ body .wrapper #main #title h2 {
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #main #title .hide-desk {
+  body .wrapper #title .hide-desk {
     display: none;
   }
 }
@@ -331,7 +327,7 @@ body .wrapper #wedding header {
 
 body .wrapper #wedding header h3 {
   font-size: 3.815rem;
-  line-height: 0.9;
+  line-height: 0.8;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
@@ -523,7 +519,7 @@ body .wrapper #rsvp {
 
 body .wrapper #rsvp h3 {
   font-size: 3.815rem;
-  line-height: 0.9;
+  line-height: 0.8;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }

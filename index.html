@@ -16,22 +16,13 @@
   <body>
     <div class="wrapper">
       <header id="main">
-        <nav id="desktop">
+        <nav id="nav">
           <ul>
               <li><a href="#story">Our Story</a></li>
               <li><a href="#wedding">The Wedding</a></li>
               <li><a href="#registry">Our Registry</a></li>
           </ul>            
           <!--<a class="button" href="#rsvp">RSVP Soon</a>-->
-        </nav>
-
-        <nav id="mobile">
-          <ul>
-            <li><a href="#"><img class="logo" src="images/logo_camsey.svg" alt="Camsey Logo" /></a></li>
-            <li><a href="#story">Story</a></li>
-            <li><a href="#wedding">Wedding</a></li>
-            <li><a href="#registry">Registry</a></li>
-          </ul>
         </nav>
 
         <div id="title">
@@ -143,12 +134,12 @@
       //Dynamic Navigation
       $(document).scroll(function() {
                 if($(window).scrollTop() > 50){
-                  $("#mobile").css("position","fixed");
-                  $("#mobile").css("background","rgba(0,0,0,0.8)");
+                  $("#nav").css("position","fixed");
+                  $("#nav").css("background","rgba(0,0,0,0.8)");
 
                 }else if($(window).scrollTop() < 50){
-                  $("#mobile").css("position","absolute");
-                  $("#mobile").css("background","transparent");
+                  $("#nav").css("position","absolute");
+                  $("#nav").css("background","transparent");
 
                 }
           });

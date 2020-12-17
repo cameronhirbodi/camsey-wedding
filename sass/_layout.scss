@@ -16,16 +16,17 @@ body {
             padding: 20px;
             @media only screen and (min-width: 768px) {
                 padding: 40px;
-              }
+            }
             nav {
                 position: absolute;
                 width: 100%;
                 left: 0;
                 top: 0;
+                z-index: 100;
                 ul {
                     margin: 1rem 0;
                     text-transform: uppercase;
-                    font-size: 0.8rem;
+                    font-size: 0.6rem;
                     letter-spacing: 0.2rem;
                     li {
                         margin-right: 1rem;
@@ -45,11 +46,9 @@ body {
                         }
                     }
                 }
-                &#desktop {
-                    display: none;
-                }
                 @media only screen and (min-width: 360px) {
                     ul {
+                        font-size: 0.65rem;
                         li {
                             margin-right: 2rem;
                         }
@@ -57,58 +56,55 @@ body {
                 }
                 @media only screen and (min-width: 480px) {
                     ul {
+                        font-size: 0.7rem;
                         li {
                             margin-right: 3rem;
                         }
                     }
                 }
                 @media only screen and (min-width: 768px) {
-                    &#mobile {
-                        display: none;
-                    }
-                    &#desktop {
-                        display: block;
-                        ul {
-                            margin: 2rem 0;
+                    ul {
+                        font-size: 0.8rem;
+                        li {
+                            margin-right: 4rem;
                         }
                     }
                 }
             }
-            #title {
-                grid-row: 3;
-                height: 100%;
-                clear: both;
-                justify-content: center;
-                align-content: center;
-                text-shadow: 1px 1px 5px rgba($black, 0.5);
-                .logo {
-                    display: none;
-                    width: 5rem;
-                    height: 5rem;
-                    margin-bottom: 1rem;
-                    @media only screen and (min-width: 768px) {
-                        display: inline-block;
-                      }
-                }
-                h1 {
-                    font-size: 3.815rem;
-                    line-height: 0.9;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5rem;
-                    @media only screen and (min-width: 768px) {
-                        font-size: 4.768em;
-                      }
-                }
-                h2 {
-                    font-family: 'Poppins', sans-serif;
-                    text-transform: uppercase;
-                    font-size: 0.8rem;
-                    letter-spacing: 0.4rem;
-                }
-                .hide-desk {
-                    @media only screen and (min-width: 768px) {
-                        display: none;
+        }
+        #title {
+            position: relative;
+            top: 5rem;
+            grid-row: 3;
+            height: 100%;
+            clear: both;
+            justify-content: center;
+            align-content: center;
+            text-shadow: 1px 1px 5px rgba($black, 0.5);
+            .logo {
+                display: inline-block;
+                width: 5rem;
+                height: 5rem;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font-size: 3.815rem;
+                line-height: 0.8;
+                text-transform: uppercase;
+                letter-spacing: 0.5rem;
+                @media only screen and (min-width: 768px) {
+                    font-size: 4.768em;
                     }
+            }
+            h2 {
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                letter-spacing: 0.4rem;
+            }
+            .hide-desk {
+                @media only screen and (min-width: 768px) {
+                    display: none;
                 }
             }
         }
@@ -194,7 +190,7 @@ body {
                   }
                 h3 {
                     font-size: 3.815rem;
-                    line-height: 0.9;
+                    line-height: 0.8;
                     text-transform: uppercase;
                     letter-spacing: 0.5rem;
                     @media only screen and (min-width: 768px) {
@@ -340,7 +336,7 @@ body {
               }
             h3 {
                 font-size: 3.815rem;
-                line-height: 0.9;
+                line-height: 0.8;
                 text-transform: uppercase;
                 letter-spacing: 0.5rem;
                 @media only screen and (min-width: 768px) {
@@ -461,7 +457,6 @@ body {
                 }
             }
         }
-        //Back to top button
         #topBtn {
             display: none; /* Hidden by default */
             position: fixed; /* Fixed/sticky position */
