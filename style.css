@@ -114,6 +114,16 @@ body .wrapper #main {
   padding: 20px;
 }
 
+body .wrapper #main:before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  width: calc(100% + 80px);
+  height: 30vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+}
+
 @media only screen and (min-width: 768px) {
   body .wrapper #main {
     padding: 40px;
