@@ -673,18 +673,18 @@ body .wrapper #photos .glider-contain .glider li a img {
   object-fit: cover;
 }
 
-body .wrapper #myBtn {
+body .wrapper #topBtn {
   display: none;
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 10px;
+  bottom: 20px;
   /* Place the button at the bottom of the page */
-  right: 10px;
+  right: 20px;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   /* Remove borders */
   outline: none;
   /* Remove outline */
@@ -694,15 +694,21 @@ body .wrapper #myBtn {
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
-  padding: 15px;
+  padding: 10px;
   /* Some padding */
   font-size: 0.7rem;
   /* Increase font size */
 }
 
-body .wrapper #myBtn:hover {
+body .wrapper #topBtn:hover {
   background-color: #4575f0;
   /* Add a dark-grey background on hover */
+}
+
+body .wrapper #topBtn img {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 body .wrapper footer {
