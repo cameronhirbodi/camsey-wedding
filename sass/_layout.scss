@@ -18,8 +18,48 @@ body {
                 padding: 40px;
               }
             nav {
+                width: 100%;
+                margin-left: -20px;
+                margin-top: -20px;
+                ul {
+                    margin: 1rem 0;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.2rem;
+                    li {
+                        margin-right: 1rem;
+                        vertical-align: middle;
+                        text-shadow: 1px 1px 2px rgba($black, 0.7);
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        a {
+                            color: $white;
+                            img {
+                                vertical-align: middle;
+                                width: 2rem;
+                                height: 2rem;
+                                filter: drop-shadow( 1px 1px 2px rgba($black, .7));
+                            }
+                        }
+                    }
+                }
                 &#desktop {
                     display: none;
+                }
+                @media only screen and (min-width: 360px) {
+                    ul {
+                        li {
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+                @media only screen and (min-width: 480px) {
+                    ul {
+                        li {
+                            margin-right: 3rem;
+                        }
+                    }
                 }
                 @media only screen and (min-width: 768px) {
                     &#mobile {
@@ -27,26 +67,9 @@ body {
                     }
                     &#desktop {
                         display: block;
-                        a {
-                            color: $white;
-                        }
-                        ul {
-                            margin: 0.5rem 0;
-                            text-transform: uppercase;
-                            text-shadow: 1px 1px 2px rgba($black, 0.5);
-                            font-size: 0.8rem;
-                            letter-spacing: 0.2rem;
-                            //float: left;
-                            li {
-                                margin-right: 2rem;
-                                &:last-child {
-                                    margin-right: 0;
-                                }
-                            }
-                        }
-                        .button {
-                            float: right;
-                        }
+                        width: calc(100% + 80px);
+                        margin-left: -40px;
+                        margin-top: -40px;
                     }
                 }
             }
