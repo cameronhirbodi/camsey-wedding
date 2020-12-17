@@ -8,10 +8,11 @@
     <meta property="og:url" content="https://camandcasey.com/">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="glider/glider.css">
+    <link rel="stylesheet" type="text/css" href="splide/splide.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Peddana&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="glider/glider.js"></script>
+    <script src="splide/splide.min.js"></script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -112,20 +113,19 @@
 
         <section id="photos">
           <h3>Engagement Photos</h3>
-          <div class="glider-contain">
-            <ul class="glider">
-              <li><a href="#"><img src ="images/gallery/image_01.jpg"></a></li>
-              <li><a href="#"><img src ="images/gallery/image_02.jpg"></a></li>
-              <li><a href="#"><img src ="images/gallery/image_03.jpg"></a></li>
-              <li><a href="#"><img src ="images/gallery/image_04.jpg"></a></li>
-              <li><a href="#"><img src ="images/gallery/image_05.jpg"></a></li>
-              <li><a href="#"><img src ="images/gallery/image_06.jpg"></a></li>
-              <li><a href="#"><img src ="images/gallery/image_07.jpg"></a></li>
-              <li><a href="#"><img src ="images/gallery/image_08.jpg"></a></li>
-            </ul>
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li><a href="#"><img src="images/gallery/image_01.jpg"></a></li>
+                <li><a href="#"><img src="images/gallery/image_02.jpg"></a></li>
+                <li><a href="#"><img src="images/gallery/image_03.jpg"></a></li>
+                <li><a href="#"><img src="images/gallery/image_04.jpg"></a></li>
+                <li><a href="#"><img src="images/gallery/image_05.jpg"></a></li>
+                <li><a href="#"><img src="images/gallery/image_06.jpg"></a></li>
+                <li><a href="#"><img src="images/gallery/image_07.jpg"></a></li>
+                <li><a href="#"><img src="images/gallery/image_08.jpg"></a></li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -148,19 +148,6 @@
 
                 }
           });
-
-      //Image Carousel
-      window.addEventListener('load', function(){
-        new Glider(document.querySelector('.glider'), {
-          slidesToShow: 5,
-          slidesToScroll: 5,
-          draggable: true,
-          arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-          }
-        })
-      });
 
       //Back to top button:
         mybutton = document.getElementById("topBtn");
@@ -185,6 +172,11 @@
       //Dynamic Footer Date
       var year = new Date();
       document.getElementById('dtText').innerHTML = year.getFullYear();
+    </script>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide' ).mount();
+      } );
     </script>
   </body>
 </html>
