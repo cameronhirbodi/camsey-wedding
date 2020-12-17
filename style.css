@@ -180,6 +180,9 @@ body .wrapper #main nav#desktop {
     margin-left: -40px;
     margin-top: -40px;
   }
+  body .wrapper #main nav#desktop ul {
+    margin: 2rem 0;
+  }
 }
 
 body .wrapper #main #title {
