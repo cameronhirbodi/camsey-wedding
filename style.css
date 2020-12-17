@@ -119,9 +119,9 @@ body .wrapper #main:before {
   position: absolute;
   left: -40px;
   top: -40px;
-  width: calc(100% + 80px);
-  height: 30vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+  height: 25vh;
+  width: calc(100% + 40px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
 }
 
 @media only screen and (min-width: 768px) {
