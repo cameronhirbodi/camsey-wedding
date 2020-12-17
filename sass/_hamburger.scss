@@ -45,7 +45,7 @@ html {
     }
     
     label input:checked + .menu {
-      box-shadow: 0 0 0 100vw $blue-dark, 0 0 0 100vh $blue-dark;
+      box-shadow: 0 0 0 100vw $blue-darkest, 0 0 0 100vh $blue-darkest;
       border-radius: 0;
       transition: all 0.25s ease-in-out;
     }
@@ -81,13 +81,13 @@ html {
       right: -10px;
       top: -10px;
       z-index: 100;
-      background: $blue-dark;
+      background: $blue-darkest;
       border-radius: 50%;
       width: 10px;
       height: 10px;
       -webkit-transition: .5s ease-in-out;
       transition: .5s ease-in-out;
-      box-shadow: 0 0 0 0 $blue-dark, 0 0 0 0 $blue-dark;
+      box-shadow: 0 0 0 0 $blue-darkest, 0 0 0 0 $blue-darkest;
       cursor: pointer;
     }
 

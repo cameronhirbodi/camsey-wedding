@@ -101,7 +101,7 @@ body {
                     display: block;
                     content: '';
                     margin: 1rem auto 2.5rem;
-                    border-right: 2px dotted $blue-dark;
+                    border-right: 2px dotted $blue-darkest;
                     height: 1rem;
                     width: 0;
                 }
@@ -368,9 +368,11 @@ body {
                         text-indent: -99999px;
                         padding: 4rem 2rem;
                         border: 1px solid $grey-light;
+                        transition: border 300ms;
                         &:hover {
-                            border: 1px solid $black;
                             background-size: auto;
+                            border: 1px solid $black;
+                            transition: border 300ms;
                         }
                     }
                     &.crate_barrel {
