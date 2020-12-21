@@ -178,8 +178,6 @@
         item: 5,
         slideMove: 2,
         slideMargin: 10,
-        enableTouch: true,
-        enableDrag: false,
         responsive: [
           {
             breakpoint: 1280,
@@ -209,7 +207,7 @@
         ],
         onSliderLoad: function (el) {
           el.lightGallery({
-            selector: '#imageGallery .lslide'
+            selector: '#imageGallery .lslide',
           });
         }
       });
