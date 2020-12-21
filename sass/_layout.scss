@@ -7,7 +7,7 @@ body {
             display: grid;
             grid-template-rows: repeat(5, 1fr);
             color: $white;
-            background: linear-gradient(rgba($black, 0.2),rgba($black, 0.2)), url("/images/splash_title.jpg");
+            background: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)), url("/images/splash_title.jpg");
             background-size: cover;
             background-position: 72% 0;
             background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body {
                 top: -40px;
                 height: 25vh;
                 width: calc(100% + 40px);
-                background-image: linear-gradient(rgba($black,0.2), transparent);
+                background-image: linear-gradient(rgba($black, 0.2), transparent);
             }
             @media only screen and (min-width: 768px) {
                 padding: 40px;
@@ -61,7 +61,7 @@ body {
                                 vertical-align: middle;
                                 width: 2rem;
                                 height: 2rem;
-                                filter: drop-shadow( 1px 1px 2px rgba($black, .7));
+                                filter: drop-shadow(1px 1px 2px rgba($black, 0.7));
                             }
                         }
                     }
@@ -114,10 +114,10 @@ body {
                 letter-spacing: 0.5rem;
                 @media only screen and (min-width: 768px) {
                     font-size: 4.768em;
-                    }
+                }
             }
             h2 {
-                font-family: 'Poppins', sans-serif;
+                font-family: "Poppins", sans-serif;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 letter-spacing: 0.4rem;
@@ -139,7 +139,7 @@ body {
                 margin: 0;
                 &:after {
                     display: block;
-                    content: '';
+                    content: "";
                     margin: 1rem auto 2.5rem;
                     border-right: 2px dotted $blue-darkest;
                     height: 1rem;
@@ -150,7 +150,7 @@ body {
                 }
             }
             h3 {
-                font-family: 'Lora', serif;
+                font-family: "Lora", serif;
                 font-style: italic;
                 line-height: 2.5;
                 &:after {
@@ -165,7 +165,7 @@ body {
                 font-size: 1rem;
                 font-weight: 500;
                 letter-spacing: 0.2rem;
-                font-family: 'Poppins', sans-serif;
+                font-family: "Poppins", sans-serif;
                 text-transform: uppercase;
                 margin-bottom: 0.5rem;
             }
@@ -174,7 +174,8 @@ body {
             grid-column: span 12;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            .ceremony, .reception {
+            .ceremony,
+            .reception {
                 h5 {
                     font-size: 2.441rem;
                     line-height: 1.5;
@@ -189,7 +190,7 @@ body {
             }
             .time {
                 font-weight: 500;
-                font-family: 'Poppins', sans-serif;
+                font-family: "Poppins", sans-serif;
                 text-transform: uppercase;
             }
             header {
@@ -198,7 +199,7 @@ body {
                 align-content: center;
                 justify-content: center;
                 color: $white;
-                background: linear-gradient(rgba($black, 0.2),rgba($black, 0.2)), url("/images/splash_wedding.jpg");
+                background: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)), url("/images/splash_wedding.jpg");
                 background-size: cover;
                 background-position: 45% 0;
                 background-repeat: no-repeat;
@@ -207,7 +208,7 @@ body {
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
-                  }
+                }
                 h3 {
                     font-size: 3.815rem;
                     line-height: 0.8;
@@ -219,7 +220,7 @@ body {
                 }
                 h4 {
                     font-size: 2.441rem;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: "Poppins", sans-serif;
                     text-transform: uppercase;
                     font-size: 0.8rem;
                     letter-spacing: 0.4rem;
@@ -233,7 +234,7 @@ body {
                 }
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
-                  }
+                }
             }
             .ceremony {
                 grid-column: span 12;
@@ -244,7 +245,7 @@ body {
                 @media only screen and (min-width: 768px) {
                     grid-column: 3 / 7;
                     padding: 40px;
-                  }
+                }
             }
             .reception {
                 grid-column: span 12;
@@ -256,14 +257,14 @@ body {
                 @media only screen and (min-width: 768px) {
                     grid-column: 7 / 11;
                     padding: 40px;
-                  }
+                }
             }
             .hotels {
                 grid-column: span 12;
                 padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
                     padding: 80px 40px;
-                  }
+                }
             }
             .bridal_party {
                 grid-column: span 12;
@@ -295,39 +296,39 @@ body {
                             background-size: cover;
                             background-position: center;
                             &.alay {
-                                background-image: url("images/party_alay.jpg"); 
+                                background-image: url("images/party_alay.jpg");
                             }
                             &.kelly {
-                                background-image: url("images/party_kelly.jpg"); 
+                                background-image: url("images/party_kelly.jpg");
                             }
                             &.douglas {
-                                background-image: url("images/party_douglas.jpg"); 
+                                background-image: url("images/party_douglas.jpg");
                             }
                             &.francis {
-                                background-image: url("images/party_francis.jpg"); 
+                                background-image: url("images/party_francis.jpg");
                             }
                             &.william {
-                                background-image: url("images/party_william.jpg"); 
+                                background-image: url("images/party_william.jpg");
                             }
                             &.dustin {
-                                background-image: url("images/party_dustin.jpg"); 
+                                background-image: url("images/party_dustin.jpg");
                             }
                             &.iris {
-                                background-image: url("images/party_iris.jpg"); 
+                                background-image: url("images/party_iris.jpg");
                             }
                             &.zach {
-                                background-image: url("images/party_zach.jpg"); 
+                                background-image: url("images/party_zach.jpg");
                             }
                         }
                         strong {
-                            font-family: 'Poppins', sans-serif;
+                            font-family: "Poppins", sans-serif;
                             font-style: normal;
                             line-height: 1;
                             font-weight: 400;
                             margin: 0;
                         }
                         em {
-                            font-family: 'Lora', serif;
+                            font-family: "Lora", serif;
                             font-style: italic;
                             line-height: 1;
                             font-weight: 400;
@@ -344,7 +345,7 @@ body {
             align-content: center;
             justify-content: center;
             color: $white;
-            background: linear-gradient(rgba($black, 0.2),rgba($black, 0.2)), url("/images/splash_rsvp.jpg");
+            background: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)), url("/images/splash_rsvp.jpg");
             background-size: cover;
             background-position: 45% 0;
             background-repeat: no-repeat;
@@ -353,7 +354,7 @@ body {
             padding: 60px 20px;
             @media only screen and (min-width: 768px) {
                 padding: 80px 40px;
-              }
+            }
             h3 {
                 font-size: 3.815rem;
                 line-height: 0.8;
@@ -361,11 +362,11 @@ body {
                 letter-spacing: 0.5rem;
                 @media only screen and (min-width: 768px) {
                     font-size: 4.768em;
-                  }
+                }
             }
             h4 {
                 font-size: 2.441rem;
-                font-family: 'Poppins', sans-serif;
+                font-family: "Poppins", sans-serif;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 letter-spacing: 0.4rem;
@@ -378,9 +379,9 @@ body {
             @media only screen and (min-width: 768px) {
                 grid-column: 3 / 11;
                 padding: 80px 0;
-              }
-              h3 {
-                font-family: 'Lora', serif;
+            }
+            h3 {
+                font-family: "Lora", serif;
                 font-style: italic;
                 line-height: 2.5;
                 &:after {
@@ -397,7 +398,7 @@ body {
                 grid-gap: 20px;
                 @media only screen and (min-width: 768px) {
                     grid-template-columns: repeat(3, 1fr);
-                  }
+                }
                 li {
                     background-color: $white;
                     background-size: auto;
@@ -444,9 +445,9 @@ body {
             padding: 60px 40px;
             @media only screen and (min-width: 768px) {
                 padding: 80px 40px;
-              }
+            }
             h3 {
-                font-family: 'Lora', serif;
+                font-family: "Lora", serif;
                 font-style: italic;
                 line-height: 2.5;
                 &:after {
@@ -472,18 +473,19 @@ body {
                                 object-fit: cover;
                             }
                         }
-
                     }
                 }
             }
-            .splide {
+            #imageGallery {
                 margin: 0 auto;
-                max-width: 480px;
-                .splide__slide {
+                li {
+                    height: 240px;
+                    overflow: hidden;
                     img {
-                        object-fit: cover; /* cover image */
+                        min-width: 100%;
+                        height: 240px;
+                        object-fit: cover; /* Do not scale the image */
                         object-position: center; /* Center the image within the element */
-                        width: 100%;
                     }
                 }
             }
@@ -518,7 +520,7 @@ body {
             padding: 20px;
             @media only screen and (min-width: 768px) {
                 padding: 40px;
-              }
+            }
         }
     }
 }

@@ -238,7 +238,7 @@ body .wrapper #title h1 {
 }
 
 body .wrapper #title h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.4rem;
@@ -268,7 +268,7 @@ body .wrapper #story p {
 
 body .wrapper #story p:after {
   display: block;
-  content: '';
+  content: "";
   margin: 1rem auto 2.5rem;
   border-right: 2px dotted #041132;
   height: 1rem;
@@ -280,7 +280,7 @@ body .wrapper #story p.script:after {
 }
 
 body .wrapper #story h3 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
   line-height: 2.5;
 }
@@ -297,7 +297,7 @@ body .wrapper #story h4 {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
@@ -308,12 +308,14 @@ body .wrapper #wedding {
   grid-template-columns: repeat(12, 1fr);
 }
 
-body .wrapper #wedding .ceremony h5, body .wrapper #wedding .reception h5 {
+body .wrapper #wedding .ceremony h5,
+body .wrapper #wedding .reception h5 {
   font-size: 2.441rem;
   line-height: 1.5;
 }
 
-body .wrapper #wedding .ceremony h5:after, body .wrapper #wedding .reception h5:after {
+body .wrapper #wedding .ceremony h5:after,
+body .wrapper #wedding .reception h5:after {
   display: block;
   content: "";
   margin: 0 auto 2.5rem;
@@ -323,7 +325,7 @@ body .wrapper #wedding .ceremony h5:after, body .wrapper #wedding .reception h5:
 
 body .wrapper #wedding .time {
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
@@ -363,7 +365,7 @@ body .wrapper #wedding header h3 {
 
 body .wrapper #wedding header h4 {
   font-size: 2.441rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.4rem;
@@ -503,7 +505,7 @@ body .wrapper #wedding .bridal_party ul li span.zach {
 }
 
 body .wrapper #wedding .bridal_party ul li strong {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 1;
   font-weight: 400;
@@ -511,7 +513,7 @@ body .wrapper #wedding .bridal_party ul li strong {
 }
 
 body .wrapper #wedding .bridal_party ul li em {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
   line-height: 1;
   font-weight: 400;
@@ -555,7 +557,7 @@ body .wrapper #rsvp h3 {
 
 body .wrapper #rsvp h4 {
   font-size: 2.441rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.4rem;
@@ -575,7 +577,7 @@ body .wrapper #registry {
 }
 
 body .wrapper #registry h3 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
   line-height: 2.5;
 }
@@ -659,7 +661,7 @@ body .wrapper #photos {
 }
 
 body .wrapper #photos h3 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
   line-height: 2.5;
 }
@@ -690,17 +692,22 @@ body .wrapper #photos .glider-contain .glider li a img {
   object-fit: cover;
 }
 
-body .wrapper #photos .splide {
+body .wrapper #photos #imageGallery {
   margin: 0 auto;
-  max-width: 480px;
 }
 
-body .wrapper #photos .splide .splide__slide img {
+body .wrapper #photos #imageGallery li {
+  height: 240px;
+  overflow: hidden;
+}
+
+body .wrapper #photos #imageGallery li img {
+  min-width: 100%;
+  height: 240px;
   object-fit: cover;
-  /* cover image */
+  /* Do not scale the image */
   object-position: center;
   /* Center the image within the element */
-  width: 100%;
 }
 
 body .wrapper #topBtn {
