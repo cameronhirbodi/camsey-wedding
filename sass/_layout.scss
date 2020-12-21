@@ -476,6 +476,19 @@ body {
                     }
                 }
             }
+            #imageGallery {
+                margin: 0 auto;
+                li {
+                    height: 240px;
+                    overflow: hidden;
+                    img {
+                        min-width: 100%;
+                        height: 240px;
+                        object-fit: cover; /* Do not scale the image */
+                        object-position: center; /* Center the image within the element */
+                    }
+                }
+            }
         }
         #topBtn {
             display: none; /* Hidden by default */

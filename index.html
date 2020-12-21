@@ -14,9 +14,8 @@
     rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link type="text/css" rel="stylesheet" href="lightslider/lightslider.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="lightslider/lightslider.js"></script>
-  <link type="text/css" rel="stylesheet" href="lightgallery/lightGallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" />
   <script src="lightgallery/lightGallery.js"></script>
 
 </head>
@@ -175,16 +174,39 @@
     //Splide Carousel
     $(document).ready(function () {
       $('#imageGallery').lightSlider({
-        gallery: true,
-        item: 1,
-        loop: true,
-        thumbItem: 9,
-        slideMargin: 0,
-        enableDrag: false,
-        currentPagerPosition: 'left',
+        item: 5,
+        slideMove: 2,
+        slideMargin: 10,
+        responsive: [
+          {
+            breakpoint: 1280,
+            settings: {
+              item: 4,
+            }
+          },
+          {
+            breakpoint: 960,
+            settings: {
+              item: 3,
+              slideMove: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              item: 2,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              item: 1,
+            }
+          }
+        ],
         onSliderLoad: function (el) {
           el.lightGallery({
-            selector: '#imageGallery .lslide'
+            selector: '#imageGallery .lslide',
           });
         }
       });
