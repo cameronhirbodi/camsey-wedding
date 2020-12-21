@@ -175,39 +175,16 @@
     //Splide Carousel
     $(document).ready(function () {
       $('#imageGallery').lightSlider({
-        item: 5,
-        slideMove: 2,
-        slideMargin: 10,
-        responsive: [
-          {
-            breakpoint: 1280,
-            settings: {
-              item: 4,
-            }
-          },
-          {
-            breakpoint: 960,
-            settings: {
-              item: 3,
-              slideMove: 1,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              item: 2,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              item: 1,
-            }
-          }
-        ],
+        gallery: true,
+        item: 1,
+        loop: true,
+        thumbItem: 9,
+        slideMargin: 0,
+        enableDrag: false,
+        currentPagerPosition: 'left',
         onSliderLoad: function (el) {
           el.lightGallery({
-            selector: '#imageGallery .lslide',
+            selector: '#imageGallery .lslide'
           });
         }
       });
