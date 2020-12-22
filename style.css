@@ -710,6 +710,18 @@ body .wrapper #photos #imageGallery li img {
   /* Center the image within the element */
 }
 
+@media only screen and (min-width: 768px) {
+  body .wrapper #photos #imageGallery li img {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #photos #imageGallery li {
+    height: 180px;
+  }
+}
+
 body .wrapper #topBtn {
   display: none;
   /* Hidden by default */

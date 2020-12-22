@@ -217,7 +217,7 @@
     $(document).ready(function () {
       $('#imageGallery').lightSlider({
         item: 5,
-        slideMove: 2,
+        slideMove: 5,
         slideMargin: 10,
         enableDrag: false,
         responsive: [
@@ -225,25 +225,21 @@
             breakpoint: 1280,
             settings: {
               item: 4,
+              slideMove: 4,
             }
           },
           {
             breakpoint: 960,
             settings: {
               item: 3,
-              slideMove: 1,
+              slideMove: 3,
             }
           },
           {
             breakpoint: 768,
             settings: {
               item: 2,
-            }
-          },
-          {
-            breakpoint: 640,
-            settings: {
-              item: 1,
+              slideMove: 2,
             }
           }
         ],
