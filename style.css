@@ -697,13 +697,13 @@ body .wrapper #photos #imageGallery {
 }
 
 body .wrapper #photos #imageGallery li {
-  height: 240px;
+  height: 180px;
   overflow: hidden;
 }
 
 body .wrapper #photos #imageGallery li img {
   min-width: 100%;
-  height: 240px;
+  height: 180px;
   object-fit: cover;
   /* Do not scale the image */
   object-position: center;
@@ -712,13 +712,13 @@ body .wrapper #photos #imageGallery li img {
 
 @media only screen and (min-width: 768px) {
   body .wrapper #photos #imageGallery li img {
-    height: 180px;
+    height: 240px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #photos #imageGallery li {
-    height: 180px;
+    height: 240px;
   }
 }
 
