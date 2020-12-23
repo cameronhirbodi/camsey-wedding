@@ -27,10 +27,10 @@ html body ul li {
   display: inline-block;
   color: #fff;
   background-color: #041132;
-  border: 1px solid #041132;
+  border: 2px solid #041132;
   transition: all 300ms;
   letter-spacing: 0.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -40,20 +40,20 @@ html body ul li {
 .button:hover {
   text-decoration: none;
   background-color: #4575f0;
-  border: 1px solid #4575f0;
+  border: 2px solid #4575f0;
   transition: background-color 300ms, border 300ms;
 }
 
 .button.secondary {
   color: #041132;
   background-color: transparent;
-  border: 1px solid #041132;
+  border: 2px solid #041132;
 }
 
 .button.secondary:hover {
   text-decoration: none;
   color: #4575f0;
-  border: 1px solid #4575f0;
+  border: 2px solid #4575f0;
   transition: background-color 300ms, border 300ms;
 }
 
