@@ -10,7 +10,8 @@
   }
 }
 
-#title .logo, #title h1 {
+#title .logo,
+#title h1 {
   position: relative;
   animation-timing-function: ease-in-out;
   animation-name: fade-down;
@@ -308,27 +309,6 @@ body .wrapper #wedding {
   grid-template-columns: repeat(12, 1fr);
 }
 
-body .wrapper #wedding .ceremony h5,
-body .wrapper #wedding .reception h5 {
-  font-size: 2.441rem;
-  line-height: 1.5;
-}
-
-body .wrapper #wedding .ceremony h5:after,
-body .wrapper #wedding .reception h5:after {
-  display: block;
-  content: "";
-  margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #A6BBCE;
-  width: 30px;
-}
-
-body .wrapper #wedding .time {
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-}
-
 body .wrapper #wedding header {
   grid-column: span 12;
   display: grid;
@@ -371,71 +351,96 @@ body .wrapper #wedding header h4 {
   letter-spacing: 0.4rem;
 }
 
-body .wrapper #wedding .location {
+body .wrapper #wedding div {
   grid-column: span 12;
+}
+
+body .wrapper #wedding div .location {
   padding: 60px 20px;
 }
 
-body .wrapper #wedding .location p {
+body .wrapper #wedding div .location p {
   margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding .location {
+  body .wrapper #wedding div .location {
     padding: 80px 40px;
   }
 }
 
-body .wrapper #wedding .ceremony {
+body .wrapper #wedding div .ceremony h5,
+body .wrapper #wedding div .reception h5 {
+  font-size: 2.441rem;
+  line-height: 1.5;
+}
+
+body .wrapper #wedding div .ceremony h5:after,
+body .wrapper #wedding div .reception h5:after {
+  display: block;
+  content: "";
+  margin: 1rem auto 2.5rem;
+  border-bottom: 4px solid #A6BBCE;
+  width: 30px;
+}
+
+body .wrapper #wedding div .ceremony .time,
+body .wrapper #wedding div .reception .time {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+body .wrapper #wedding div .ceremony {
   grid-column: span 12;
   padding: 20px;
 }
 
-body .wrapper #wedding .ceremony p {
+body .wrapper #wedding div .ceremony p {
   margin-top: 0.2rem;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding .ceremony {
+  body .wrapper #wedding div .ceremony {
     grid-column: 3 / 7;
     padding: 40px;
   }
 }
 
-body .wrapper #wedding .reception {
+body .wrapper #wedding div .reception {
   grid-column: span 12;
   padding: 20px;
 }
 
-body .wrapper #wedding .reception p {
+body .wrapper #wedding div .reception p {
   margin-top: 0.2rem;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding .reception {
+  body .wrapper #wedding div .reception {
     grid-column: 7 / 11;
     padding: 40px;
   }
 }
 
-body .wrapper #wedding .hotels {
+body .wrapper #wedding div .hotels {
   grid-column: span 12;
   padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding .hotels {
+  body .wrapper #wedding div .hotels {
     padding: 80px 40px;
   }
 }
 
-body .wrapper #wedding .bridal_party {
+body .wrapper #wedding div .bridal_party {
   grid-column: span 12;
   display: grid;
   background-color: #F2F3F4;
 }
 
-body .wrapper #wedding .bridal_party ul {
+body .wrapper #wedding div .bridal_party ul {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
@@ -444,25 +449,25 @@ body .wrapper #wedding .bridal_party ul {
 }
 
 @media only screen and (min-width: 480px) {
-  body .wrapper #wedding .bridal_party ul {
+  body .wrapper #wedding div .bridal_party ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding .bridal_party ul {
+  body .wrapper #wedding div .bridal_party ul {
     grid-template-columns: repeat(4, 1fr);
     justify-self: center;
   }
 }
 
-body .wrapper #wedding .bridal_party ul li {
+body .wrapper #wedding div .bridal_party ul li {
   display: grid;
   grid-gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-body .wrapper #wedding .bridal_party ul li span {
+body .wrapper #wedding div .bridal_party ul li span {
   display: block;
   margin-bottom: 0.5rem;
   width: auto;
@@ -472,39 +477,39 @@ body .wrapper #wedding .bridal_party ul li span {
   background-position: center;
 }
 
-body .wrapper #wedding .bridal_party ul li span.alay {
+body .wrapper #wedding div .bridal_party ul li span.alay {
   background-image: url("images/party_alay.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li span.kelly {
+body .wrapper #wedding div .bridal_party ul li span.kelly {
   background-image: url("images/party_kelly.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li span.douglas {
+body .wrapper #wedding div .bridal_party ul li span.douglas {
   background-image: url("images/party_douglas.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li span.francis {
+body .wrapper #wedding div .bridal_party ul li span.francis {
   background-image: url("images/party_francis.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li span.william {
+body .wrapper #wedding div .bridal_party ul li span.william {
   background-image: url("images/party_william.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li span.dustin {
+body .wrapper #wedding div .bridal_party ul li span.dustin {
   background-image: url("images/party_dustin.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li span.iris {
+body .wrapper #wedding div .bridal_party ul li span.iris {
   background-image: url("images/party_iris.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li span.zach {
+body .wrapper #wedding div .bridal_party ul li span.zach {
   background-image: url("images/party_zach.jpg");
 }
 
-body .wrapper #wedding .bridal_party ul li strong {
+body .wrapper #wedding div .bridal_party ul li strong {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 1;
@@ -512,7 +517,7 @@ body .wrapper #wedding .bridal_party ul li strong {
   margin: 0;
 }
 
-body .wrapper #wedding .bridal_party ul li em {
+body .wrapper #wedding div .bridal_party ul li em {
   font-family: "Lora", serif;
   font-style: italic;
   line-height: 1;

@@ -174,25 +174,6 @@ body {
             grid-column: span 12;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            .ceremony,
-            .reception {
-                h5 {
-                    font-size: 2.441rem;
-                    line-height: 1.5;
-                    &:after {
-                        display: block;
-                        content: "";
-                        margin: 1rem auto 2.5rem;
-                        border-bottom: 4px solid $blue;
-                        width: 30px;
-                    }
-                }
-            }
-            .time {
-                font-weight: 500;
-                font-family: "Poppins", sans-serif;
-                text-transform: uppercase;
-            }
             header {
                 grid-column: span 12;
                 display: grid;
@@ -226,114 +207,135 @@ body {
                     letter-spacing: 0.4rem;
                 }
             }
-            .location {
+            div {
                 grid-column: span 12;
-                padding: 60px 20px;
-                p {
-                    margin-bottom: 2rem;
-                }
-                @media only screen and (min-width: 768px) {
-                    padding: 80px 40px;
-                }
-            }
-            .ceremony {
-                grid-column: span 12;
-                padding: 20px;
-                p {
-                    margin-top: 0.2rem;
-                }
-                @media only screen and (min-width: 768px) {
-                    grid-column: 3 / 7;
-                    padding: 40px;
-                }
-            }
-            .reception {
-                grid-column: span 12;
-
-                padding: 20px;
-                p {
-                    margin-top: 0.2rem;
-                }
-                @media only screen and (min-width: 768px) {
-                    grid-column: 7 / 11;
-                    padding: 40px;
-                }
-            }
-            .hotels {
-                grid-column: span 12;
-                padding: 60px 20px;
-                @media only screen and (min-width: 768px) {
-                    padding: 80px 40px;
-                }
-            }
-            .bridal_party {
-                grid-column: span 12;
-                display: grid;
-                background-color: $blue-lightest;
-                ul {
-                    display: grid;
-                    align-items: start;
-                    grid-template-columns: repeat(2, 1fr);
+                .location {
                     padding: 60px 20px;
-                    grid-gap: 20px;
-                    @media only screen and (min-width: 480px) {
-                        grid-template-columns: repeat(3, 1fr);
+                    p {
+                        margin-bottom: 2rem;
                     }
                     @media only screen and (min-width: 768px) {
-                        grid-template-columns: repeat(4, 1fr);
-                        justify-self: center;
+                        padding: 80px 40px;
                     }
-                    li {
-                        display: grid;
-                        grid-gap: 0.5rem;
-                        margin-bottom: 0.5rem;
-                        span {
+                }
+                .ceremony,
+                .reception {
+                    h5 {
+                        font-size: 2.441rem;
+                        line-height: 1.5;
+                        &:after {
                             display: block;
+                            content: "";
+                            margin: 1rem auto 2.5rem;
+                            border-bottom: 4px solid $blue;
+                            width: 30px;
+                        }
+                    }
+                    .time {
+                        font-weight: 500;
+                        font-family: "Poppins", sans-serif;
+                        text-transform: uppercase;
+                    }
+                }
+                .ceremony {
+                    grid-column: span 12;
+                    padding: 20px;
+                    p {
+                        margin-top: 0.2rem;
+                    }
+                    @media only screen and (min-width: 768px) {
+                        grid-column: 3 / 7;
+                        padding: 40px;
+                    }
+                }
+                .reception {
+                    grid-column: span 12;
+
+                    padding: 20px;
+                    p {
+                        margin-top: 0.2rem;
+                    }
+                    @media only screen and (min-width: 768px) {
+                        grid-column: 7 / 11;
+                        padding: 40px;
+                    }
+                }
+                .hotels {
+                    grid-column: span 12;
+                    padding: 60px 20px;
+                    @media only screen and (min-width: 768px) {
+                        padding: 80px 40px;
+                    }
+                }
+                .bridal_party {
+                    grid-column: span 12;
+                    display: grid;
+                    background-color: $blue-lightest;
+                    ul {
+                        display: grid;
+                        align-items: start;
+                        grid-template-columns: repeat(2, 1fr);
+                        padding: 60px 20px;
+                        grid-gap: 20px;
+                        @media only screen and (min-width: 480px) {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                        @media only screen and (min-width: 768px) {
+                            grid-template-columns: repeat(4, 1fr);
+                            justify-self: center;
+                        }
+                        li {
+                            display: grid;
+                            grid-gap: 0.5rem;
                             margin-bottom: 0.5rem;
-                            width: auto;
-                            height: 0;
-                            padding-bottom: 100%;
-                            background-size: cover;
-                            background-position: center;
-                            &.alay {
-                                background-image: url("images/party_alay.jpg");
+                            span {
+                                display: block;
+                                margin-bottom: 0.5rem;
+                                width: auto;
+                                height: 0;
+                                padding-bottom: 100%;
+                                background-size: cover;
+                                background-position: center;
+                                &.alay {
+                                    background-image: url("images/party_alay.jpg");
+                                }
+                                &.kelly {
+                                    background-image: url("images/party_kelly.jpg");
+                                }
+                                &.douglas {
+                                    background-image: url("images/party_douglas.jpg");
+                                }
+                                &.francis {
+                                    background-image: url("images/party_francis.jpg");
+                                }
+                                &.william {
+                                    background-image: url("images/party_william.jpg");
+                                }
+                                &.dustin {
+                                    background-image: url("images/party_dustin.jpg");
+                                }
+                                &.iris {
+                                    background-image: url("images/party_iris.jpg");
+                                }
+                                &.zach {
+                                    background-image: url("images/party_zach.jpg");
+                                }
                             }
-                            &.kelly {
-                                background-image: url("images/party_kelly.jpg");
+                            strong {
+                                font-family: "Poppins", sans-serif;
+                                font-style: normal;
+                                line-height: 1;
+                                font-weight: 400;
+                                margin: 0;
                             }
-                            &.douglas {
-                                background-image: url("images/party_douglas.jpg");
+                            em {
+                                font-family: "Lora", serif;
+                                font-style: italic;
+                                line-height: 1;
+                                font-weight: 400;
+                                margin: 0;
+                                color: $grey-dark;
                             }
-                            &.francis {
-                                background-image: url("images/party_francis.jpg");
-                            }
-                            &.william {
-                                background-image: url("images/party_william.jpg");
-                            }
-                            &.dustin {
-                                background-image: url("images/party_dustin.jpg");
-                            }
-                            &.iris {
-                                background-image: url("images/party_iris.jpg");
-                            }
-                            &.zach {
-                                background-image: url("images/party_zach.jpg");
-                            }
-                        }
-                        strong {
-                            font-family: "Poppins", sans-serif;
-                            font-style: normal;
-                            line-height: 1;
-                            font-weight: 400;
-                            margin: 0;
-                        }
-                        em {
-                            font-family: "Lora", serif;
-                            font-style: italic;
-                            line-height: 1;
-                            font-weight: 400;
-                            margin: 0;
-                            color: $grey-dark;
                         }
                     }
                 }
