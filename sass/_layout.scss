@@ -208,10 +208,7 @@ body {
                 }
             }
             div {
-                grid-column: 3 / 7;
-                @media only screen and (min-width: 768px) {
-                    grid-column: span 12;
-                }
+                grid-column: span 12;
                 .location {
                     padding: 60px 20px;
                     p {
