@@ -355,6 +355,12 @@ body .wrapper #wedding div {
   grid-column: span 12;
 }
 
+@media only screen and (min-width: 768px) {
+  body .wrapper #wedding div {
+    grid-column: 3 / 7;
+  }
+}
+
 body .wrapper #wedding div .location {
   padding: 60px 20px;
 }
@@ -365,7 +371,6 @@ body .wrapper #wedding div .location p {
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding div .location {
-    grid-column: 3 / 7;
     padding: 80px 40px;
   }
 }

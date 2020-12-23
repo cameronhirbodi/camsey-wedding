@@ -209,13 +209,15 @@ body {
             }
             div {
                 grid-column: span 12;
+                @media only screen and (min-width: 768px) {
+                    grid-column: 3 / 7;
+                }
                 .location {
                     padding: 60px 20px;
                     p {
                         margin-bottom: 2rem;
                     }
                     @media only screen and (min-width: 768px) {
-                        grid-column: 3 / 7;
                         padding: 80px 40px;
                     }
                 }
