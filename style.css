@@ -282,13 +282,13 @@ body .wrapper #story p.script:after {
 body .wrapper #story h3 {
   font-family: "Lora", serif;
   font-style: italic;
-  line-height: 2.5;
+  line-height: 1.5;
 }
 
 body .wrapper #story h3:after {
   display: block;
   content: "";
-  margin: 0 auto 2.5rem;
+  margin: 1rem auto 2.5rem;
   border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
@@ -318,7 +318,7 @@ body .wrapper #wedding .ceremony h5:after,
 body .wrapper #wedding .reception h5:after {
   display: block;
   content: "";
-  margin: 0 auto 2.5rem;
+  margin: 1rem auto 2.5rem;
   border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
@@ -579,13 +579,13 @@ body .wrapper #registry {
 body .wrapper #registry h3 {
   font-family: "Lora", serif;
   font-style: italic;
-  line-height: 2.5;
+  line-height: 1.5;
 }
 
 body .wrapper #registry h3:after {
   display: block;
   content: "";
-  margin: 0 auto 2.5rem;
+  margin: 1rem auto 2.5rem;
   border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
@@ -663,13 +663,13 @@ body .wrapper #photos {
 body .wrapper #photos h3 {
   font-family: "Lora", serif;
   font-style: italic;
-  line-height: 2.5;
+  line-height: 1.5;
 }
 
 body .wrapper #photos h3:after {
   display: block;
   content: "";
-  margin: 0 auto 2.5rem;
+  margin: 1rem auto 2.5rem;
   border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
@@ -766,6 +766,7 @@ body .wrapper footer {
   grid-column: span 12;
   background-color: #E1E5E8;
   padding: 20px;
+  line-height: 1.5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -787,7 +788,7 @@ html {
 }
 
 html body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 400;
   line-height: 2;
@@ -798,8 +799,12 @@ html body p {
   margin-bottom: 1.15rem;
 }
 
-html body h1, html body h2, html body h3, html body h4, html body h5 {
-  font-family: 'Peddana', serif;
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5 {
+  font-family: "Peddana", serif;
   font-weight: 400;
   line-height: 2;
   margin: 0;
@@ -825,8 +830,10 @@ html body h5 {
   font-size: 1.25rem;
 }
 
-html body small, html body .text_small {
+html body small,
+html body .text_small {
   font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 html body a {
@@ -840,7 +847,7 @@ html body a:hover {
 
 html body .script {
   font-size: 1.25rem;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
   line-height: 1.5;
   color: #686868;

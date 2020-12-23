@@ -152,11 +152,11 @@ body {
             h3 {
                 font-family: "Lora", serif;
                 font-style: italic;
-                line-height: 2.5;
+                line-height: 1.5;
                 &:after {
                     display: block;
                     content: "";
-                    margin: 0 auto 2.5rem;
+                    margin: 1rem auto 2.5rem;
                     border-bottom: 4px solid $blue;
                     width: 30px;
                 }
@@ -182,7 +182,7 @@ body {
                     &:after {
                         display: block;
                         content: "";
-                        margin: 0 auto 2.5rem;
+                        margin: 1rem auto 2.5rem;
                         border-bottom: 4px solid $blue;
                         width: 30px;
                     }
@@ -383,11 +383,11 @@ body {
             h3 {
                 font-family: "Lora", serif;
                 font-style: italic;
-                line-height: 2.5;
+                line-height: 1.5;
                 &:after {
                     display: block;
                     content: "";
-                    margin: 0 auto 2.5rem;
+                    margin: 1rem auto 2.5rem;
                     border-bottom: 4px solid $blue;
                     width: 30px;
                 }
@@ -449,11 +449,11 @@ body {
             h3 {
                 font-family: "Lora", serif;
                 font-style: italic;
-                line-height: 2.5;
+                line-height: 1.5;
                 &:after {
                     display: block;
                     content: "";
-                    margin: 0 auto 2.5rem;
+                    margin: 1rem auto 2.5rem;
                     border-bottom: 4px solid $blue;
                     width: 30px;
                 }
@@ -524,6 +524,7 @@ body {
             grid-column: span 12;
             background-color: $grey-light;
             padding: 20px;
+            line-height: 1.5;
             @media only screen and (min-width: 768px) {
                 padding: 40px;
             }
