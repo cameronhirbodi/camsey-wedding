@@ -617,7 +617,7 @@ body .wrapper #registry ul li.williams_sonoma {
 body .wrapper #photos {
   grid-column: span 12;
   background-color: #F2F3F4;
-  padding: 60px 40px;
+  padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {

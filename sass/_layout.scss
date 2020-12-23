@@ -444,7 +444,7 @@ body {
         #photos {
             grid-column: span 12;
             background-color: $blue-lightest;
-            padding: 60px 40px;
+            padding: 60px 20px;
             @media only screen and (min-width: 768px) {
                 padding: 80px 40px;
             }
