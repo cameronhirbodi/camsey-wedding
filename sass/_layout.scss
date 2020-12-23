@@ -268,9 +268,9 @@ body {
                     }
                 }
                 .bridal_party {
+                    background-color: $blue-lightest;
                     grid-column: span 12;
                     display: grid;
-                    background-color: $blue-lightest;
                     ul {
                         display: grid;
                         align-items: start;

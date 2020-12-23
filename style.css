@@ -1,42 +1,3 @@
-/* Fade down */
-@keyframes fade-down {
-  from {
-    top: -4rem;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-#title .logo,
-#title h1 {
-  position: relative;
-  animation-timing-function: ease-in-out;
-  animation-name: fade-down;
-  animation-duration: 2s;
-}
-
-/* Fade up */
-@keyframes fade-up {
-  from {
-    top: 4rem;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-#title h2 {
-  position: relative;
-  animation-timing-function: ease-in-out;
-  animation-name: fade-up;
-  animation-duration: 2s;
-}
-
 * {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -435,9 +396,9 @@ body .wrapper #wedding div .hotels {
 }
 
 body .wrapper #wedding div .bridal_party {
+  background-color: #F2F3F4;
   grid-column: span 12;
   display: grid;
-  background-color: #F2F3F4;
 }
 
 body .wrapper #wedding div .bridal_party ul {
