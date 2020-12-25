@@ -640,24 +640,6 @@ body .wrapper #photos h3:after {
   width: 30px;
 }
 
-body .wrapper #photos .glider-contain .glider {
-  margin: 0;
-}
-
-body .wrapper #photos .glider-contain .glider li {
-  margin-right: 1rem;
-}
-
-body .wrapper #photos .glider-contain .glider li:last-child {
-  margin-right: 0;
-}
-
-body .wrapper #photos .glider-contain .glider li a img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
 body .wrapper #photos #imageGallery {
   margin: 0 auto;
 }
@@ -686,6 +668,15 @@ body .wrapper #photos #imageGallery li img {
   body .wrapper #photos #imageGallery li {
     height: 240px;
   }
+}
+
+body .wrapper #photos .lSSlideOuter .lSPager.lSpg > li a {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+body .wrapper #photos .lSSlideOuter .lSPager.lSpg > li:hover a,
+body .wrapper #photos .lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color: #45627d;
 }
 
 body .wrapper #topBtn {

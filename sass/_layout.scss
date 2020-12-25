@@ -460,24 +460,7 @@ body {
                     width: 30px;
                 }
             }
-            .glider-contain {
-                .glider {
-                    margin: 0;
-                    li {
-                        margin-right: 1rem;
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                        a {
-                            img {
-                                width: 100%;
-                                height: 150px;
-                                object-fit: cover;
-                            }
-                        }
-                    }
-                }
-            }
+            // lightSlider
             #imageGallery {
                 margin: 0 auto;
                 li {
@@ -496,6 +479,13 @@ body {
                         height: 240px;
                     }
                 }
+            }
+            .lSSlideOuter .lSPager.lSpg > li a {
+                background-color: rgba(0, 0, 0, 0.15);
+            }
+            .lSSlideOuter .lSPager.lSpg > li:hover a,
+            .lSSlideOuter .lSPager.lSpg > li.active a {
+                background-color: #45627d;
             }
         }
         #topBtn {
