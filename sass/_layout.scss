@@ -470,6 +470,12 @@ body {
                 li {
                     height: 180px;
                     overflow: hidden;
+                    transition: opacity 300ms;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.5;
+                        transition: opacity 300ms;
+                    }
                     img {
                         min-width: 100%;
                         height: 180px;

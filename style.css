@@ -652,6 +652,13 @@ body .wrapper #photos #imageGallery {
 body .wrapper #photos #imageGallery li {
   height: 180px;
   overflow: hidden;
+  transition: opacity 300ms;
+}
+
+body .wrapper #photos #imageGallery li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 300ms;
 }
 
 body .wrapper #photos #imageGallery li img {
