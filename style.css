@@ -614,6 +614,11 @@ body .wrapper #registry ul li.williams_sonoma {
   background-size: 75% auto;
 }
 
+body .wrapper #registry ul li.parachute_home {
+  background-image: url("images/reg_parachute_home.png");
+  background-size: 75% auto;
+}
+
 body .wrapper #photos {
   grid-column: span 12;
   background-color: #F2F3F4;
