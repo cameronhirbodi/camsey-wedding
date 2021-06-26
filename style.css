@@ -1,6 +1,7 @@
 * {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,6 +29,7 @@ html body ul li {
   color: #fff;
   background-color: #041132;
   border: 2px solid #041132;
+  -webkit-transition: all 300ms;
   transition: all 300ms;
   letter-spacing: 0.2rem;
   font-family: "Poppins", sans-serif;
@@ -41,6 +43,7 @@ html body ul li {
   text-decoration: none;
   background-color: #4575f0;
   border: 2px solid #4575f0;
+  -webkit-transition: background-color 300ms, border 300ms;
   transition: background-color 300ms, border 300ms;
 }
 
@@ -54,19 +57,24 @@ html body ul li {
   text-decoration: none;
   color: #4575f0;
   border: 2px solid #4575f0;
+  -webkit-transition: background-color 300ms, border 300ms;
   transition: background-color 300ms, border 300ms;
 }
 
 body .wrapper {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
 body .wrapper #main {
   grid-column: span 12;
+  display: -ms-grid;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
+    url("/images/splash_title.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/splash_title.jpg");
   background-size: cover;
   background-position: 72% 0;
@@ -83,6 +91,7 @@ body .wrapper #main:before {
   top: -40px;
   height: 25vh;
   width: calc(100% + 40px);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
 }
 
@@ -138,6 +147,7 @@ body .wrapper #main nav ul li a img {
   vertical-align: middle;
   width: 2rem;
   height: 2rem;
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
 }
 
@@ -171,10 +181,14 @@ body .wrapper #main nav ul li a img {
 body .wrapper #title {
   position: relative;
   top: 3rem;
+  -ms-grid-row: 3;
   grid-row: 3;
   height: 100%;
   clear: both;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -219,6 +233,8 @@ body .wrapper #story {
 
 @media only screen and (min-width: 768px) {
   body .wrapper #story {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
     grid-column: 4 / 10;
     padding: 80px 40px;
   }
@@ -251,7 +267,7 @@ body .wrapper #story h3:after {
   display: block;
   content: "";
   margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #A6BBCE;
+  border-bottom: 4px solid #a6bbce;
   width: 30px;
 }
 
@@ -266,16 +282,23 @@ body .wrapper #story h4 {
 
 body .wrapper #wedding {
   grid-column: span 12;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
 body .wrapper #wedding header {
   grid-column: span 12;
+  display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
+    url("/images/splash_wedding.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/splash_wedding.jpg");
   background-size: cover;
   background-position: 45% 0;
@@ -341,7 +364,7 @@ body .wrapper #wedding div .reception h5:after {
   display: block;
   content: "";
   margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #A6BBCE;
+  border-bottom: 4px solid #a6bbce;
   width: 30px;
 }
 
@@ -363,6 +386,8 @@ body .wrapper #wedding div .ceremony p {
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding div .ceremony {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
     grid-column: 3 / 7;
     padding: 40px;
   }
@@ -379,6 +404,8 @@ body .wrapper #wedding div .reception p {
 
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding div .reception {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 4;
     grid-column: 7 / 11;
     padding: 40px;
   }
@@ -396,13 +423,17 @@ body .wrapper #wedding div .hotels {
 }
 
 body .wrapper #wedding div .bridal_party {
-  background-color: #F2F3F4;
+  background-color: #f2f3f4;
   grid-column: span 12;
+  display: -ms-grid;
   display: grid;
 }
 
 body .wrapper #wedding div .bridal_party ul {
+  display: -ms-grid;
   display: grid;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
   padding: 60px 20px;
@@ -418,11 +449,13 @@ body .wrapper #wedding div .bridal_party ul {
 @media only screen and (min-width: 768px) {
   body .wrapper #wedding div .bridal_party ul {
     grid-template-columns: repeat(4, 1fr);
+    -ms-grid-column-align: center;
     justify-self: center;
   }
 }
 
 body .wrapper #wedding div .bridal_party ul li {
+  display: -ms-grid;
   display: grid;
   grid-gap: 0.5rem;
   margin-bottom: 0.5rem;
@@ -489,10 +522,16 @@ body .wrapper #wedding div .bridal_party ul li em {
 
 body .wrapper #rsvp {
   grid-column: span 12;
+  display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
+    url("/images/splash_rsvp.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/splash_rsvp.jpg");
   background-size: cover;
   background-position: 45% 0;
@@ -531,12 +570,15 @@ body .wrapper #rsvp h4 {
 
 body .wrapper #registry {
   grid-column: span 12;
+  display: -ms-grid;
   display: grid;
   padding: 60px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #registry {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
     grid-column: 3 / 11;
     padding: 80px 0;
   }
@@ -552,11 +594,12 @@ body .wrapper #registry h3:after {
   display: block;
   content: "";
   margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #A6BBCE;
+  border-bottom: 4px solid #a6bbce;
   width: 30px;
 }
 
 body .wrapper #registry ul {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
@@ -579,13 +622,15 @@ body .wrapper #registry ul li a {
   display: block;
   text-indent: -99999px;
   padding: 4rem 2rem;
-  border: 1px solid #E1E5E8;
+  border: 1px solid #e1e5e8;
+  -webkit-transition: border 300ms;
   transition: border 300ms;
 }
 
 body .wrapper #registry ul li a:hover {
   background-size: auto;
   border: 1px solid #000;
+  -webkit-transition: border 300ms;
   transition: border 300ms;
 }
 
@@ -621,7 +666,7 @@ body .wrapper #registry ul li.parachute_home {
 
 body .wrapper #photos {
   grid-column: span 12;
-  background-color: #F2F3F4;
+  background-color: #f2f3f4;
   padding: 60px 20px;
 }
 
@@ -641,7 +686,7 @@ body .wrapper #photos h3:after {
   display: block;
   content: "";
   margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #A6BBCE;
+  border-bottom: 4px solid #a6bbce;
   width: 30px;
 }
 
@@ -652,20 +697,24 @@ body .wrapper #photos #imageGallery {
 body .wrapper #photos #imageGallery li {
   height: 180px;
   overflow: hidden;
+  -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
 }
 
 body .wrapper #photos #imageGallery li:hover {
   cursor: pointer;
   opacity: 0.5;
+  -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
 }
 
 body .wrapper #photos #imageGallery li img {
   min-width: 100%;
   height: 180px;
+  -o-object-fit: cover;
   object-fit: cover;
   /* Do not scale the image */
+  -o-object-position: center;
   object-position: center;
   /* Center the image within the element */
 }
@@ -716,12 +765,14 @@ body .wrapper #topBtn {
   /* Some padding */
   font-size: 0.7rem;
   /* Increase font size */
+  -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
 }
 
 body .wrapper #topBtn:hover {
   background-color: rgba(0, 0, 0, 0.7);
   /* Set a background color */
+  -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
 }
 
@@ -733,7 +784,7 @@ body .wrapper #topBtn img {
 
 body .wrapper footer {
   grid-column: span 12;
-  background-color: #E1E5E8;
+  background-color: #e1e5e8;
   padding: 20px;
   line-height: 1.5;
 }
