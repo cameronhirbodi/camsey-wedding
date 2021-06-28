@@ -2,7 +2,7 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -64,18 +64,19 @@ html body ul li {
 body .wrapper {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 body .wrapper #main {
   grid-column: span 12;
   display: -ms-grid;
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
-    url("/images/splash_title.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/splash_title.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("images/splash_title.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/splash_title.jpg");
   background-size: cover;
   background-position: 72% 0;
   background-repeat: no-repeat;
@@ -148,7 +149,7 @@ body .wrapper #main nav ul li a img {
   width: 2rem;
   height: 2rem;
   -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
 }
 
 @media only screen and (min-width: 360px) {
@@ -186,10 +187,10 @@ body .wrapper #title {
   height: 100%;
   clear: both;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -267,7 +268,7 @@ body .wrapper #story h3:after {
   display: block;
   content: "";
   margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #a6bbce;
+  border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
 
@@ -284,7 +285,8 @@ body .wrapper #wedding {
   grid-column: span 12;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 body .wrapper #wedding header {
@@ -292,14 +294,13 @@ body .wrapper #wedding header {
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
-    url("/images/splash_wedding.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/splash_wedding.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("images/splash_wedding.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/splash_wedding.jpg");
   background-size: cover;
   background-position: 45% 0;
   background-repeat: no-repeat;
@@ -335,133 +336,111 @@ body .wrapper #wedding header h4 {
   letter-spacing: 0.4rem;
 }
 
-body .wrapper #wedding div {
+body .wrapper #wedding #section_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   grid-column: span 12;
 }
 
-body .wrapper #wedding div .location {
-  padding: 60px 20px;
-}
-
-body .wrapper #wedding div .location p {
-  margin-bottom: 2rem;
+body .wrapper #wedding #section_wrapper div {
+  margin: 40px 20px;
+  grid-column: span 12;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding div .location {
-    padding: 80px 40px;
+  body .wrapper #wedding #section_wrapper div {
+    margin: 40px 0;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
   }
 }
 
-body .wrapper #wedding div .ceremony h5,
-body .wrapper #wedding div .reception h5 {
+body .wrapper #wedding #section_wrapper .location p {
+  margin-bottom: 2rem;
+}
+
+body .wrapper #wedding #section_wrapper .section_treatment p {
+  margin-top: 0.2rem;
+}
+
+body .wrapper #wedding #section_wrapper .section_treatment h5 {
   font-size: 2.441rem;
   line-height: 1.5;
 }
 
-body .wrapper #wedding div .ceremony h5:after,
-body .wrapper #wedding div .reception h5:after {
+body .wrapper #wedding #section_wrapper .section_treatment h5:after {
   display: block;
   content: "";
-  margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #a6bbce;
+  margin: 0.5rem auto 1.25rem;
+  border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
 
-body .wrapper #wedding div .ceremony .time,
-body .wrapper #wedding div .reception .time {
+@media only screen and (min-width: 768px) {
+  body .wrapper #wedding #section_wrapper .section_treatment h5:after {
+    margin: 1rem auto 2.5rem;
+  }
+}
+
+body .wrapper #wedding #section_wrapper .section_treatment .time {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
-body .wrapper #wedding div .ceremony {
-  grid-column: span 12;
-  padding: 20px;
+body .wrapper #wedding #section_wrapper .hotels {
+  border-radius: 30px;
+  padding: 40px 20px;
+  background-color: #F7F9FB;
+  margin-bottom: 80px;
 }
 
-body .wrapper #wedding div .ceremony p {
-  margin-top: 0.2rem;
-}
-
-@media only screen and (min-width: 768px) {
-  body .wrapper #wedding div .ceremony {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
-    grid-column: 3 / 7;
-    padding: 40px;
-  }
-}
-
-body .wrapper #wedding div .reception {
-  grid-column: span 12;
-  padding: 20px;
-}
-
-body .wrapper #wedding div .reception p {
-  margin-top: 0.2rem;
-}
-
-@media only screen and (min-width: 768px) {
-  body .wrapper #wedding div .reception {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 4;
-    grid-column: 7 / 11;
-    padding: 40px;
-  }
-}
-
-body .wrapper #wedding div .hotels {
-  grid-column: span 12;
-  padding: 60px 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  body .wrapper #wedding div .hotels {
-    padding: 80px 40px;
-  }
-}
-
-body .wrapper #wedding div .bridal_party {
-  background-color: #f2f3f4;
-  grid-column: span 12;
+body .wrapper #wedding .bridal_party {
+  background-color: #F2F3F4;
   display: -ms-grid;
   display: grid;
+  grid-column: span 12;
 }
 
-body .wrapper #wedding div .bridal_party ul {
+body .wrapper #wedding .bridal_party ul {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-  grid-template-columns: repeat(2, 1fr);
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   padding: 60px 20px;
   grid-gap: 20px;
 }
 
 @media only screen and (min-width: 480px) {
-  body .wrapper #wedding div .bridal_party ul {
-    grid-template-columns: repeat(3, 1fr);
+  body .wrapper #wedding .bridal_party ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding div .bridal_party ul {
-    grid-template-columns: repeat(4, 1fr);
+  body .wrapper #wedding .bridal_party ul {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     -ms-grid-column-align: center;
-    justify-self: center;
+        justify-self: center;
   }
 }
 
-body .wrapper #wedding div .bridal_party ul li {
+body .wrapper #wedding .bridal_party ul li {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-body .wrapper #wedding div .bridal_party ul li span {
+body .wrapper #wedding .bridal_party ul li span {
   display: block;
   margin-bottom: 0.5rem;
   width: auto;
@@ -471,39 +450,39 @@ body .wrapper #wedding div .bridal_party ul li span {
   background-position: center;
 }
 
-body .wrapper #wedding div .bridal_party ul li span.alay {
+body .wrapper #wedding .bridal_party ul li span.alay {
   background-image: url("images/party_alay.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li span.kelly {
+body .wrapper #wedding .bridal_party ul li span.kelly {
   background-image: url("images/party_kelly.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li span.douglas {
+body .wrapper #wedding .bridal_party ul li span.douglas {
   background-image: url("images/party_douglas.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li span.francis {
+body .wrapper #wedding .bridal_party ul li span.francis {
   background-image: url("images/party_francis.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li span.william {
+body .wrapper #wedding .bridal_party ul li span.william {
   background-image: url("images/party_william.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li span.dustin {
+body .wrapper #wedding .bridal_party ul li span.dustin {
   background-image: url("images/party_dustin.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li span.iris {
+body .wrapper #wedding .bridal_party ul li span.iris {
   background-image: url("images/party_iris.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li span.zach {
+body .wrapper #wedding .bridal_party ul li span.zach {
   background-image: url("images/party_zach.jpg");
 }
 
-body .wrapper #wedding div .bridal_party ul li strong {
+body .wrapper #wedding .bridal_party ul li strong {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 1;
@@ -511,7 +490,7 @@ body .wrapper #wedding div .bridal_party ul li strong {
   margin: 0;
 }
 
-body .wrapper #wedding div .bridal_party ul li em {
+body .wrapper #wedding .bridal_party ul li em {
   font-family: "Lora", serif;
   font-style: italic;
   line-height: 1;
@@ -525,14 +504,13 @@ body .wrapper #rsvp {
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
-    url("/images/splash_rsvp.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/splash_rsvp.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("images/splash_rsvp.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/splash_rsvp.jpg");
   background-size: cover;
   background-position: 45% 0;
   background-repeat: no-repeat;
@@ -594,20 +572,22 @@ body .wrapper #registry h3:after {
   display: block;
   content: "";
   margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #a6bbce;
+  border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
 
 body .wrapper #registry ul {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #registry ul {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -622,7 +602,7 @@ body .wrapper #registry ul li a {
   display: block;
   text-indent: -99999px;
   padding: 4rem 2rem;
-  border: 1px solid #e1e5e8;
+  border: 1px solid #E1E5E8;
   -webkit-transition: border 300ms;
   transition: border 300ms;
 }
@@ -666,7 +646,7 @@ body .wrapper #registry ul li.parachute_home {
 
 body .wrapper #photos {
   grid-column: span 12;
-  background-color: #f2f3f4;
+  background-color: #F2F3F4;
   padding: 60px 20px;
 }
 
@@ -686,7 +666,7 @@ body .wrapper #photos h3:after {
   display: block;
   content: "";
   margin: 1rem auto 2.5rem;
-  border-bottom: 4px solid #a6bbce;
+  border-bottom: 4px solid #A6BBCE;
   width: 30px;
 }
 
@@ -712,10 +692,10 @@ body .wrapper #photos #imageGallery li img {
   min-width: 100%;
   height: 180px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   /* Do not scale the image */
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   /* Center the image within the element */
 }
 
@@ -784,7 +764,7 @@ body .wrapper #topBtn img {
 
 body .wrapper footer {
   grid-column: span 12;
-  background-color: #e1e5e8;
+  background-color: #E1E5E8;
   padding: 20px;
   line-height: 1.5;
 }
@@ -870,5 +850,8 @@ html body .script {
   font-family: "Lora", serif;
   font-style: italic;
   line-height: 1.5;
+}
+
+html body .grey_text {
   color: #686868;
 }
