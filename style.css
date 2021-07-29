@@ -37,6 +37,7 @@ html body ul li {
   font-weight: 500;
   text-transform: uppercase;
   padding: 0.6rem 2rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -336,7 +337,7 @@ body .wrapper #wedding header h4 {
   letter-spacing: 0.4rem;
 }
 
-body .wrapper #wedding #section_wrapper {
+body .wrapper #wedding .section_wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -344,13 +345,13 @@ body .wrapper #wedding #section_wrapper {
   grid-column: span 12;
 }
 
-body .wrapper #wedding #section_wrapper div {
+body .wrapper #wedding .section_wrapper div {
   margin: 40px 20px;
   grid-column: span 12;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding #section_wrapper div {
+  body .wrapper #wedding .section_wrapper div {
     margin: 40px 0;
     -ms-grid-column: 3;
     -ms-grid-column-span: 8;
@@ -358,20 +359,20 @@ body .wrapper #wedding #section_wrapper div {
   }
 }
 
-body .wrapper #wedding #section_wrapper .location p {
+body .wrapper #wedding .section_wrapper .location p {
   margin-bottom: 2rem;
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment p {
+body .wrapper #wedding .section_wrapper .section_treatment p {
   margin-top: 0.2rem;
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment h5 {
+body .wrapper #wedding .section_wrapper .section_treatment h5 {
   font-size: 2.441rem;
   line-height: 1.5;
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment h5:after {
+body .wrapper #wedding .section_wrapper .section_treatment h5:after {
   display: block;
   content: "";
   margin: 0.5rem auto 1.25rem;
@@ -380,18 +381,18 @@ body .wrapper #wedding #section_wrapper .section_treatment h5:after {
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding #section_wrapper .section_treatment h5:after {
+  body .wrapper #wedding .section_wrapper .section_treatment h5:after {
     margin: 1rem auto 2.5rem;
   }
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment .time {
+body .wrapper #wedding .section_wrapper .section_treatment .time {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
-body .wrapper #wedding #section_wrapper .hotels {
+body .wrapper #wedding .section_wrapper .hotels {
   border-radius: 30px;
   padding: 40px 20px;
   background-color: #F7F9FB;
@@ -500,6 +501,15 @@ body .wrapper #wedding .bridal_party ul li em {
 }
 
 body .wrapper #rsvp {
+  display: -ms-grid;
+  display: grid;
+  grid-column: span 12;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  background-color: #F2F3F4;
+}
+
+body .wrapper #rsvp header {
   grid-column: span 12;
   display: -ms-grid;
   display: grid;
@@ -520,12 +530,12 @@ body .wrapper #rsvp {
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #rsvp {
+  body .wrapper #rsvp header {
     padding: 80px 40px;
   }
 }
 
-body .wrapper #rsvp h3 {
+body .wrapper #rsvp header h3 {
   font-size: 3.815rem;
   line-height: 0.8;
   text-transform: uppercase;
@@ -533,17 +543,106 @@ body .wrapper #rsvp h3 {
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #rsvp h3 {
+  body .wrapper #rsvp header h3 {
     font-size: 4.768em;
   }
 }
 
-body .wrapper #rsvp h4 {
+body .wrapper #rsvp header h4 {
   font-size: 2.441rem;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.4rem;
+}
+
+body .wrapper #rsvp .section_wrapper {
+  margin: 40px 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-column: span 12;
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #rsvp .section_wrapper {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: span 6/10;
+    margin: 80px 0;
+  }
+}
+
+body .wrapper #rsvp .form label {
+  cursor: text;
+}
+
+body .wrapper #rsvp .form ul {
+  text-align: left;
+}
+
+body .wrapper #rsvp .form ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #rsvp .form ul li {
+    margin-bottom: 40px;
+  }
+}
+
+body .wrapper #rsvp .form .names ul {
+  margin: 0;
+  padding: 0;
+}
+
+body .wrapper #rsvp .form .names ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+body .wrapper #rsvp .form .names ul li input {
+  display: inline-block;
+}
+
+body .wrapper #rsvp .form .names ul li:not(:only-child) {
+  margin-right: 1rem;
+}
+
+body .wrapper #rsvp .form .names ul li:last-child {
+  margin-right: 0;
+}
+
+body .wrapper #rsvp .form .attendance ul li {
+  display: inline-block;
+}
+
+body .wrapper #rsvp .form .attendance ul li input {
+  display: inline-block;
+  width: inherit;
+}
+
+body .wrapper #rsvp .form .attendance ul li:not(:only-child) {
+  margin-right: 1rem;
+}
+
+body .wrapper #rsvp .form .attendance ul li:last-child {
+  margin-right: 0;
+}
+
+body .wrapper #rsvp .form input,
+body .wrapper #rsvp .form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+}
+
+body .wrapper #rsvp .form .button {
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 body .wrapper #registry {
