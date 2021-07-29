@@ -329,8 +329,8 @@ body {
             }
         }
         #rsvp {
-            grid-column: span 12;
             display: grid;
+            grid-column: span 12;
             grid-template-columns: repeat(12, 1fr);
             background-color: $blue-lightest;
             header {
@@ -367,16 +367,77 @@ body {
                 }
             }
             .section_wrapper {
+                margin: 40px 20px;
                 display: grid;
-                grid-template-columns: repeat(12, 1fr);
                 grid-column: span 12;
-                div {
-                    margin: 40px 20px;
-                    grid-column: span 12;
-                    @media only screen and (min-width: 768px) {
-                        margin: 40px 0;
-                        grid-column: 3/11;
+                @media only screen and (min-width: 768px) {
+                    grid-column: span 6/10;
+                    margin: 80px 0;
+                }
+            }
+            .form {
+                label {
+                    cursor: text;
+                }
+                ul {
+                    text-align: left;
+                    li {
+                        display: block;
+                        margin-bottom: 20px;
+                        @media only screen and (min-width: 768px) {
+                            margin-bottom: 40px;
+                        }
                     }
+                }
+                .names {
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        li {
+                            margin: 0;
+                            padding: 0;
+                            display: inline-block;
+                            input {
+                                display: inline-block;
+                            }
+                            &:not(:only-child) {
+                                margin-right: 1rem;
+                            }
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+                .attendance {
+                    ul {
+                        li {
+                            display: inline-block;
+                            input {
+                                display: inline-block;
+                                width: inherit;
+                            }
+                            &:not(:only-child) {
+                                margin-right: 1rem;
+                            }
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+
+                input,
+                textarea {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    padding: 1rem;
+                }
+                .button {
+                    text-align: center;
+                    display: inline-block;
+                    margin-top: 20px;
                 }
             }
         }

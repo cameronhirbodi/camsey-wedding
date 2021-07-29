@@ -37,6 +37,7 @@ html body ul li {
   font-weight: 500;
   text-transform: uppercase;
   padding: 0.6rem 2rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -500,9 +501,9 @@ body .wrapper #wedding .bridal_party ul li em {
 }
 
 body .wrapper #rsvp {
-  grid-column: span 12;
   display: -ms-grid;
   display: grid;
+  grid-column: span 12;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   background-color: #F2F3F4;
@@ -556,25 +557,92 @@ body .wrapper #rsvp header h4 {
 }
 
 body .wrapper #rsvp .section_wrapper {
+  margin: 40px 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  grid-column: span 12;
-}
-
-body .wrapper #rsvp .section_wrapper div {
-  margin: 40px 20px;
   grid-column: span 12;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #rsvp .section_wrapper div {
-    margin: 40px 0;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 8;
-    grid-column: 3/11;
+  body .wrapper #rsvp .section_wrapper {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: span 6/10;
+    margin: 80px 0;
   }
+}
+
+body .wrapper #rsvp .form label {
+  cursor: text;
+}
+
+body .wrapper #rsvp .form ul {
+  text-align: left;
+}
+
+body .wrapper #rsvp .form ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #rsvp .form ul li {
+    margin-bottom: 40px;
+  }
+}
+
+body .wrapper #rsvp .form .names ul {
+  margin: 0;
+  padding: 0;
+}
+
+body .wrapper #rsvp .form .names ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+body .wrapper #rsvp .form .names ul li input {
+  display: inline-block;
+}
+
+body .wrapper #rsvp .form .names ul li:not(:only-child) {
+  margin-right: 1rem;
+}
+
+body .wrapper #rsvp .form .names ul li:last-child {
+  margin-right: 0;
+}
+
+body .wrapper #rsvp .form .attendance ul li {
+  display: inline-block;
+}
+
+body .wrapper #rsvp .form .attendance ul li input {
+  display: inline-block;
+  width: inherit;
+}
+
+body .wrapper #rsvp .form .attendance ul li:not(:only-child) {
+  margin-right: 1rem;
+}
+
+body .wrapper #rsvp .form .attendance ul li:last-child {
+  margin-right: 0;
+}
+
+body .wrapper #rsvp .form input,
+body .wrapper #rsvp .form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+}
+
+body .wrapper #rsvp .form .button {
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 body .wrapper #registry {

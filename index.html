@@ -20,6 +20,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </style>
+  <!-- a helper script for vaidating the form-->
+  <script language="JavaScript" src="validation/gen_validatorv31.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -30,13 +33,13 @@
           <li><a href="#story">About</a></li>
           <li><a href="#wedding">Details</a></li>
           <li><a href="#registry">Registry</a></li>
-          <li><a href="#photos">Photos</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
         </ul>
         <ul class="desktop">
           <li><a href="#story">Our Story</a></li>
           <li><a href="#wedding">The Wedding</a></li>
           <li><a href="#registry">Our Registry</a></li>
-          <li><a href="#photos">Photos</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
         </ul>
         <!--<a class="button" href="#rsvp">RSVP Soon</a>-->
       </nav>
@@ -149,17 +152,51 @@
                 recently tested for COVID-19.</u></strong></p>
         </div>
         <div class="form">
-          <form method="post" name="contact_form" action="contact-form-handler.php">
-            Your Name:
-            <input type="text" name="name">
-
-            Email Address:
-            <input type="text" name="email">
-
-            Message:
-            <textarea name="message"></textarea>
-
-            <input type="submit" value="Submit">
+          <form method="post" name="rsvp_form" action="rsvp-form-handler.php">
+            <ul>
+              <li class="names">
+                <ul>
+                  <li>
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname">
+                  </li>
+                  <li>
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="lastname">
+                  </li>
+                </ul>
+              </li>
+              <li class="attendance">
+                Will you be attending?
+                <ul>
+                  <li>
+                    <input type="radio" id="yes" name="attendance" value="Yes" checked>
+                    <label for="yes">Yes, see you there!</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="no" name="attendance" value="No">
+                    <label for="no">No, can't make it</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="email">
+                <label for="email">Email</label>
+                <input type="text" name="email">
+              </li>
+              <li class="guests">
+                <label for="guests">Guest full name (optional)</label>
+                <input type="text" name="guests">
+              </li>
+              <li class="food">
+                <label for="food">Any food restrictions? (optional)</label>
+                <input type="text" name="food">
+              </li>
+              <li class="comments">
+                <label for="comments">Questions or comments (optional)</label>
+                <textarea name="comments"></textarea>
+              </li>
+            </ul>
+            <input class="button" type="submit" value="Submit my RSVP">
           </form>
         </div>
       </div>
@@ -356,6 +393,16 @@
     // Dynamic footer date
     var year = new Date();
     document.getElementById('dtText').innerHTML = year.getFullYear();
+  </script>
+  <script language="JavaScript">
+    // Code for validating the form
+    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+    // for details
+    var frmvalidator = new Validator("rsvp_form");
+    frmvalidator.addValidation("firstname", "req", "Please provide your first name");
+    frmvalidator.addValidation("lastname", "req", "Please provide your last name");
+    frmvalidator.addValidation("attendance", "req", "Please choose whether or not you will attend");
+    frmvalidator.addValidation("email", "req", "Please provide your email address");
   </script>
 </body>
 
