@@ -21,8 +21,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </style>
-  <!-- a helper script for vaidating the form-->
-  <script language="JavaScript" src="validation/gen_validatorv31.js" type="text/javascript"></script>
+  <script type="text/javascript">var submitted = false;</script>
+  <script type="text/javascript">
+    $('#gform').on('submit', function (e) {
+      $('#gform *').fadeOut(2000);
+      $('#gform').prepend('Your submission has been processed...');
+    });
+  </script>
 </head>
 
 <body>
@@ -152,17 +157,19 @@
                 recently tested for COVID-19.</u></strong></p>
         </div>
         <div class="form">
-          <form method="post" name="rsvp_form" action="rsvp-form-handler.php">
+          <form name="rsvp_form" id="gform" enctype="text/plain"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSeg5wPH_kLwmQo-DT8RKygmL7m5-eMgcZqGz-b5KYkiWT-irQ/formResponse?usp=pp_url&entry.877086558=Yes,+see+you+there!"
+            target="hidden_iframe" onsubmit="submitted=true;">
             <ul>
-              <li class="names">
+              <li class=" names">
                 <ul>
                   <li>
-                    <label for="firstname">First name</label>
-                    <input type="text" name="firstname">
+                    <label for="entry.764757894">First name</label>
+                    <input type="text" name="entry.764757894" id="entry.764757894">
                   </li>
                   <li>
-                    <label for="lastname">Last name</label>
-                    <input type="text" name="lastname">
+                    <label for="entry.368303812">Last name</label>
+                    <input type="text" name="entry.368303812" id="entry.368303812">
                   </li>
                 </ul>
               </li>
@@ -170,34 +177,36 @@
                 Will you be attending?
                 <ul>
                   <li>
-                    <input type="radio" id="yes" name="attendance" value="Yes" checked>
+                    <input type="radio" name="entry.877086558" id="entry.877086558" value="Yes" checked>
                     <label for="yes">Yes, see you there!</label>
                   </li>
                   <li>
-                    <input type="radio" id="no" name="attendance" value="No">
+                    <input type="radio" name="entry.877086558" id="entry.877086558" value="No">
                     <label for="no">No, can't make it</label>
                   </li>
                 </ul>
               </li>
               <li class="email">
-                <label for="email">Email</label>
-                <input type="text" name="email">
+                <label for="entry.1421507130">Email</label>
+                <input type="text" name="entry.1421507130" id="entry.1421507130">
               </li>
               <li class="guests">
-                <label for="guests">Guest full name (optional)</label>
-                <input type="text" name="guests">
+                <label for="entry.1498135098">Guest full name (optional)</label>
+                <input type="text" name="entry.1498135098" id="entry.1498135098">
               </li>
               <li class="food">
-                <label for="food">Any food restrictions? (optional)</label>
-                <input type="text" name="food">
+                <label for="entry.1424661284">Any food restrictions? (optional)</label>
+                <input type="text" name="entry.1424661284" id="entry.1424661284">
               </li>
               <li class="comments">
-                <label for="comments">Questions or comments (optional)</label>
-                <textarea name="comments"></textarea>
+                <label for="entry.2606285">Questions or comments (optional)</label>
+                <textarea name="entry.2606285" id="entry.2606285"></textarea>
               </li>
             </ul>
             <input class="button" type="submit" value="Submit my RSVP">
           </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
         </div>
       </div>
     </section>
@@ -393,16 +402,6 @@
     // Dynamic footer date
     var year = new Date();
     document.getElementById('dtText').innerHTML = year.getFullYear();
-  </script>
-  <script language="JavaScript">
-    // Code for validating the form
-    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-    // for details
-    var frmvalidator = new Validator("rsvp_form");
-    frmvalidator.addValidation("firstname", "req", "Please provide your first name");
-    frmvalidator.addValidation("lastname", "req", "Please provide your last name");
-    frmvalidator.addValidation("attendance", "req", "Please choose whether or not you will attend");
-    frmvalidator.addValidation("email", "req", "Please provide your email address");
   </script>
 </body>
 
