@@ -207,7 +207,7 @@ body {
                     letter-spacing: 0.4rem;
                 }
             }
-            #section_wrapper {
+            .section_wrapper {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
                 grid-column: span 12;
@@ -331,34 +331,53 @@ body {
         #rsvp {
             grid-column: span 12;
             display: grid;
-            align-content: center;
-            justify-content: center;
-            color: $white;
-            background: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)), url("images/splash_rsvp.jpg");
-            background-size: cover;
-            background-position: 45% 0;
-            background-repeat: no-repeat;
-            height: 95vh;
-            text-shadow: 1px 1px 5px rgba($black, 0.5);
-            padding: 60px 20px;
-            @media only screen and (min-width: 768px) {
-                padding: 80px 40px;
-            }
-            h3 {
-                font-size: 3.815rem;
-                line-height: 0.8;
-                text-transform: uppercase;
-                letter-spacing: 0.5rem;
+            grid-template-columns: repeat(12, 1fr);
+            background-color: $blue-lightest;
+            header {
+                grid-column: span 12;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                color: $white;
+                background: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)), url("images/splash_rsvp.jpg");
+                background-size: cover;
+                background-position: 45% 0;
+                background-repeat: no-repeat;
+                height: 95vh;
+                text-shadow: 1px 1px 5px rgba($black, 0.5);
+                padding: 60px 20px;
                 @media only screen and (min-width: 768px) {
-                    font-size: 4.768em;
+                    padding: 80px 40px;
+                }
+                h3 {
+                    font-size: 3.815rem;
+                    line-height: 0.8;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5rem;
+                    @media only screen and (min-width: 768px) {
+                        font-size: 4.768em;
+                    }
+                }
+                h4 {
+                    font-size: 2.441rem;
+                    font-family: "Poppins", sans-serif;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.4rem;
                 }
             }
-            h4 {
-                font-size: 2.441rem;
-                font-family: "Poppins", sans-serif;
-                text-transform: uppercase;
-                font-size: 0.8rem;
-                letter-spacing: 0.4rem;
+            .section_wrapper {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-column: span 12;
+                div {
+                    margin: 40px 20px;
+                    grid-column: span 12;
+                    @media only screen and (min-width: 768px) {
+                        margin: 40px 0;
+                        grid-column: 3/11;
+                    }
+                }
             }
         }
         #registry {

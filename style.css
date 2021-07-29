@@ -336,7 +336,7 @@ body .wrapper #wedding header h4 {
   letter-spacing: 0.4rem;
 }
 
-body .wrapper #wedding #section_wrapper {
+body .wrapper #wedding .section_wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -344,13 +344,13 @@ body .wrapper #wedding #section_wrapper {
   grid-column: span 12;
 }
 
-body .wrapper #wedding #section_wrapper div {
+body .wrapper #wedding .section_wrapper div {
   margin: 40px 20px;
   grid-column: span 12;
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding #section_wrapper div {
+  body .wrapper #wedding .section_wrapper div {
     margin: 40px 0;
     -ms-grid-column: 3;
     -ms-grid-column-span: 8;
@@ -358,20 +358,20 @@ body .wrapper #wedding #section_wrapper div {
   }
 }
 
-body .wrapper #wedding #section_wrapper .location p {
+body .wrapper #wedding .section_wrapper .location p {
   margin-bottom: 2rem;
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment p {
+body .wrapper #wedding .section_wrapper .section_treatment p {
   margin-top: 0.2rem;
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment h5 {
+body .wrapper #wedding .section_wrapper .section_treatment h5 {
   font-size: 2.441rem;
   line-height: 1.5;
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment h5:after {
+body .wrapper #wedding .section_wrapper .section_treatment h5:after {
   display: block;
   content: "";
   margin: 0.5rem auto 1.25rem;
@@ -380,18 +380,18 @@ body .wrapper #wedding #section_wrapper .section_treatment h5:after {
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #wedding #section_wrapper .section_treatment h5:after {
+  body .wrapper #wedding .section_wrapper .section_treatment h5:after {
     margin: 1rem auto 2.5rem;
   }
 }
 
-body .wrapper #wedding #section_wrapper .section_treatment .time {
+body .wrapper #wedding .section_wrapper .section_treatment .time {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
-body .wrapper #wedding #section_wrapper .hotels {
+body .wrapper #wedding .section_wrapper .hotels {
   border-radius: 30px;
   padding: 40px 20px;
   background-color: #F7F9FB;
@@ -503,6 +503,15 @@ body .wrapper #rsvp {
   grid-column: span 12;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  background-color: #F2F3F4;
+}
+
+body .wrapper #rsvp header {
+  grid-column: span 12;
+  display: -ms-grid;
+  display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -520,12 +529,12 @@ body .wrapper #rsvp {
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #rsvp {
+  body .wrapper #rsvp header {
     padding: 80px 40px;
   }
 }
 
-body .wrapper #rsvp h3 {
+body .wrapper #rsvp header h3 {
   font-size: 3.815rem;
   line-height: 0.8;
   text-transform: uppercase;
@@ -533,17 +542,39 @@ body .wrapper #rsvp h3 {
 }
 
 @media only screen and (min-width: 768px) {
-  body .wrapper #rsvp h3 {
+  body .wrapper #rsvp header h3 {
     font-size: 4.768em;
   }
 }
 
-body .wrapper #rsvp h4 {
+body .wrapper #rsvp header h4 {
   font-size: 2.441rem;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.4rem;
+}
+
+body .wrapper #rsvp .section_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-column: span 12;
+}
+
+body .wrapper #rsvp .section_wrapper div {
+  margin: 40px 20px;
+  grid-column: span 12;
+}
+
+@media only screen and (min-width: 768px) {
+  body .wrapper #rsvp .section_wrapper div {
+    margin: 40px 0;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
 }
 
 body .wrapper #registry {
