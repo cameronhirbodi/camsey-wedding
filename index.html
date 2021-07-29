@@ -160,7 +160,7 @@
             action="https://docs.google.com/forms/d/e/1FAIpQLSeg5wPH_kLwmQo-DT8RKygmL7m5-eMgcZqGz-b5KYkiWT-irQ/formResponse?"
             target="hidden_iframe" onsubmit="submitted=true;">
             <ul>
-              <li class=" names">
+              <li class="names">
                 <ul>
                   <li>
                     <label for="entry.764757894">First name</label>
@@ -204,6 +204,7 @@
             </ul>
             <input class="button" type="submit" value="Submit my RSVP">
           </form>
+
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
         </div>
@@ -401,6 +402,15 @@
     // Dynamic footer date
     var year = new Date();
     document.getElementById('dtText').innerHTML = year.getFullYear();
+  </script>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript">var submitted = false;</script>
+  <script type="text/javascript">
+    $('#gform').on('submit', function (e) {
+      $('#gform *').fadeOut(1000);
+      $('#gform').prepend('Thanks for your submission!');
+    });
   </script>
 </body>
 
