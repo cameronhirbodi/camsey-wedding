@@ -638,6 +638,17 @@ body .wrapper #rsvp .form textarea {
   width: 100%;
   border: none;
   padding: 1rem;
+  border: 2px solid transparent;
+}
+
+body .wrapper #rsvp .form input:focus:required:invalid,
+body .wrapper #rsvp .form textarea:focus:required:invalid {
+  border: 2px solid red;
+}
+
+body .wrapper #rsvp .form input:focus:required:valid,
+body .wrapper #rsvp .form textarea:focus:required:valid {
+  border: 2px solid black;
 }
 
 body .wrapper #rsvp .form .button {
@@ -873,6 +884,12 @@ body .wrapper footer {
   body .wrapper footer {
     padding: 40px;
   }
+}
+
+body .wrapper .submitted {
+  background-color: rgba(0, 255, 0, 0.15);
+  margin-top: 40px;
+  padding: 20px;
 }
 
 html {

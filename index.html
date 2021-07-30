@@ -149,19 +149,19 @@
                 recently tested for COVID-19.</u></strong></p>
         </div>
         <div class="form">
-          <form
+          <form name="gform" id="gform" enctype="text/plain"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeg5wPH_kLwmQo-DT8RKygmL7m5-eMgcZqGz-b5KYkiWT-irQ/formResponse"
-            method="post">
+            target="hidden_iframe" onsubmit="submitted=true;">
             <ul>
               <li class="names">
                 <ul>
                   <li>
                     <span>First name</span>
-                    <input type="text" name="entry.764757894" id="first">
+                    <input type="text" name="entry.764757894" id="entry.764757894" required>
                   </li>
                   <li>
                     <span>Last name</span>
-                    <input type="text" name="entry.368303812" id="last">
+                    <input type="text" name="entry.368303812" id="entry.368303812" required>
                   </li>
                 </ul>
               </li>
@@ -169,14 +169,14 @@
                 <span>Will you be attending?</span>
                 <ul>
                   <li>
-                    <label for="yes">
-                      <input type="radio" name="entry.1430004648" id="yes" value="Yes" checked>
+                    <label for="entry.1430004648">
+                      <input type="radio" name="entry.1430004648" id="entry.1430004648" value="Yes" checked required>
                       <span>Yes, see you there!</span>
                     </label>
                   </li>
                   <li>
-                    <label for="no">
-                      <input type="radio" name="entry.1430004648" id="no" value="No">
+                    <label for="entry.1430004648">
+                      <input type="radio" name="entry.1430004648" id="entry.1430004648" value="No" required>
                       <span>No, can't make it</span>
                     </label>
                   </li>
@@ -184,26 +184,24 @@
               </li>
               <li class="email">
                 <span>Email</span>
-                <input type="email" name="emailAddress" id="email">
+                <input type="email" name="emailAddress" id="emailAddress" required>
               </li>
               <li class="guests">
                 <span>Guest full name (optional)</span>
-                <input type="text" name="entry.1498135098" id="guests">
+                <input type="text" name="entry.1498135098" id="entry.1498135098">
               </li>
               <li class="food">
                 <span>Any food restrictions? (optional)</span>
-                <input type="text" name="entry.1424661284" id="food">
+                <input type="text" name="entry.1424661284" id="entry.1424661284">
               </li>
               <li class="comments">
                 <span>Questions or comments (optional)</span>
-                <textarea name="entry.2606285" id="comments"></textarea>
+                <textarea name="entry.2606285" id="entry.2606285"></textarea>
               </li>
             </ul>
             <input class="button" type="submit" value="Submit my RSVP">
           </form>
-
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
         </div>
       </div>
     </section>
@@ -405,7 +403,10 @@
   <script type="text/javascript">
     $('#gform').on('submit', function (e) {
       $('#gform *').fadeOut(1000);
-      $('#gform').prepend('Thank you for your RVSP! Please contact us if you have any further questions or concerns!');
+      $('#gform').prepend('Thank you for your RVSP! <br>Please contact us if you have any further questions or concerns!');
+      window.setTimeout(function () { $('#gform').addClass("submitted"); }, 1000);
+      var elmnt = document.getElementById("gform");
+      elmnt.scrollIntoView();
     });
   </script>
 </body>

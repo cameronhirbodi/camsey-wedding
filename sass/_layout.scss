@@ -434,6 +434,13 @@ body {
                     width: 100%;
                     border: none;
                     padding: 1rem;
+                    border: 2px solid transparent;
+                    &:focus:required:invalid {
+                        border: 2px solid red;
+                    }
+                    &:focus:required:valid {
+                        border: 2px solid black;
+                    }
                 }
                 .button {
                     text-align: center;
@@ -598,6 +605,11 @@ body {
             @media only screen and (min-width: 768px) {
                 padding: 40px;
             }
+        }
+        .submitted {
+            background-color: rgba(0, 255, 0, 0.15);
+            margin-top: 40px;
+            padding: 20px;
         }
     }
 }
