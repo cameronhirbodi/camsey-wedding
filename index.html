@@ -149,49 +149,53 @@
                 recently tested for COVID-19.</u></strong></p>
         </div>
         <div class="form">
-          <form name="gform" id="gform" enctype="text/plain"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSeg5wPH_kLwmQo-DT8RKygmL7m5-eMgcZqGz-b5KYkiWT-irQ/formResponse?usp=pp_url&entry.877086558=Yes,+see+you+there!"
-            target="hidden_iframe" onsubmit="submitted=true;">
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeg5wPH_kLwmQo-DT8RKygmL7m5-eMgcZqGz-b5KYkiWT-irQ/formResponse"
+            method="post">
             <ul>
               <li class="names">
                 <ul>
                   <li>
-                    <label for="entry.764757894">First name</label>
+                    <span>First name</span>
                     <input type="text" name="entry.764757894" id="entry.764757894">
                   </li>
                   <li>
-                    <label for="entry.368303812">Last name</label>
+                    <span>Last name</span>
                     <input type="text" name="entry.368303812" id="entry.368303812">
                   </li>
                 </ul>
               </li>
               <li class="attendance">
-                Will you be attending?
+                <span>Will you be attending?</span>
                 <ul>
                   <li>
-                    <input type="radio" name="entry.877086558" id="entry.877086558" value="Yes" checked>
-                    <label for="yes">Yes, see you there!</label>
+                    <label for="Yes">
+                      <span>Yes, see you there!</span>
+                      <input type="radio" name="entry.1430004648_sentinel" id="Yes" value="Yes, see you there!">
+                    </label>
                   </li>
                   <li>
-                    <input type="radio" name="entry.877086558" id="entry.877086558" value="No">
-                    <label for="no">No, can't make it</label>
+                    <label for="No">
+                      <span>No, can't make it</span>
+                      <input type="radio" name="entry.1430004648_sentinel" id="No" value="No, can't make it">
+                    </label>
                   </li>
                 </ul>
               </li>
               <li class="email">
-                <label for="entry.1421507130">Email</label>
-                <input type="text" name="entry.1421507130" id="entry.1421507130">
+                <span>Email</span>
+                <input type="email" name="entry.1421507130" id="entry.1421507130">
               </li>
               <li class="guests">
-                <label for="entry.1498135098">Guest full name (optional)</label>
+                <span>Guest full name (optional)</span>
                 <input type="text" name="entry.1498135098" id="entry.1498135098">
               </li>
               <li class="food">
-                <label for="entry.1424661284">Any food restrictions? (optional)</label>
+                <span>Any food restrictions? (optional)</span>
                 <input type="text" name="entry.1424661284" id="entry.1424661284">
               </li>
               <li class="comments">
-                <label for="entry.2606285">Questions or comments (optional)</label>
+                <span>Questions or comments (optional)</span>
                 <textarea name="entry.2606285" id="entry.2606285"></textarea>
               </li>
             </ul>
@@ -401,7 +405,7 @@
   <script type="text/javascript">
     $('#gform').on('submit', function (e) {
       $('#gform *').fadeOut(1000);
-      $('#gform').prepend('Thanks for your submission!');
+      $('#gform').prepend('Thank you for your RVSP! Please contact us if you have any further questions or concerns!');
     });
   </script>
 </body>
