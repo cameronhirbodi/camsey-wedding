@@ -608,6 +608,7 @@ body .wrapper #rsvp .form .names ul li input {
 
 body .wrapper #rsvp .form .names ul li:not(:only-child) {
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 body .wrapper #rsvp .form .names ul li:last-child {
