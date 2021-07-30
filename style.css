@@ -886,6 +886,34 @@ body .wrapper footer {
   }
 }
 
+body .wrapper footer .count {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+body .wrapper footer .count li {
+  display: inline-block;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+body .wrapper footer .count li span {
+  display: block;
+  font-size: 3rem;
+}
+
+@media all and (min-width: 768px) {
+  body .wrapper footer .count li {
+    font-size: 2rem;
+    padding: 1em;
+  }
+  body .wrapper footer .count li span {
+    font-size: 4.5rem;
+  }
+}
+
 body .wrapper .submitted {
   background-color: rgba(0, 255, 0, 0.15);
   margin-top: 40px;
