@@ -605,6 +605,12 @@ body .wrapper #rsvp .form .names ul li {
   display: inline-block;
 }
 
+@media only screen and (min-width: 768px) {
+  body .wrapper #rsvp .form .names ul li {
+    width: 100%;
+  }
+}
+
 body .wrapper #rsvp .form .names ul li input {
   display: inline-block;
 }
