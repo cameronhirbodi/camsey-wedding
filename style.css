@@ -38,6 +38,9 @@ html body ul li {
   text-transform: uppercase;
   padding: 0.6rem 2rem;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .button:hover {
