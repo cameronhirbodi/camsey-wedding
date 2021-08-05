@@ -673,6 +673,7 @@ body .wrapper #rsvp .form .button {
 
 body .wrapper #rsvp .form input.text,
 body .wrapper #rsvp .form input[type="text"],
+body .wrapper #rsvp .form input[type="radio"],
 body .wrapper #rsvp .form input[type="button"],
 body .wrapper #rsvp .form input[type="submit"],
 body .wrapper #rsvp .form .input-checkbox {
