@@ -412,8 +412,10 @@ body {
                 }
                 .attendance {
                     ul {
+                        margin: 1rem 0;
                         li {
                             display: inline-block;
+                            margin-bottom: 1rem;
                             input {
                                 display: inline-block;
                                 width: inherit;
@@ -446,6 +448,14 @@ body {
                     text-align: center;
                     display: inline-block;
                     margin-top: 20px;
+                }
+                input.text,
+                input[type="text"],
+                input[type="button"],
+                input[type="submit"],
+                .input-checkbox {
+                    -webkit-appearance: none;
+                    border-radius: 0;
                 }
             }
         }

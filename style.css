@@ -618,8 +618,13 @@ body .wrapper #rsvp .form .names ul li:last-child {
   margin-right: 0;
 }
 
+body .wrapper #rsvp .form .attendance ul {
+  margin: 1rem 0;
+}
+
 body .wrapper #rsvp .form .attendance ul li {
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
 body .wrapper #rsvp .form .attendance ul li input {
@@ -658,6 +663,15 @@ body .wrapper #rsvp .form .button {
   text-align: center;
   display: inline-block;
   margin-top: 20px;
+}
+
+body .wrapper #rsvp .form input.text,
+body .wrapper #rsvp .form input[type="text"],
+body .wrapper #rsvp .form input[type="button"],
+body .wrapper #rsvp .form input[type="submit"],
+body .wrapper #rsvp .form .input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 body .wrapper #registry {
