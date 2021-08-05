@@ -603,11 +603,12 @@ body .wrapper #rsvp .form .names ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   body .wrapper #rsvp .form .names ul li {
-    width: 100%;
+    width: inherit;
   }
 }
 
