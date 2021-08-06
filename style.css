@@ -269,12 +269,12 @@ body .wrapper #countdown-container li {
   list-style-type: none;
   padding: 0.5rem;
   font-size: 0.85rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 body .wrapper #countdown-container li span {
   display: block;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 body .wrapper #countdown-container li.hide {
