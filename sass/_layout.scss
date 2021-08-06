@@ -508,6 +508,7 @@ body {
                     -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
                     transform: scale(1.5);
                     margin-right: 0.5rem;
+                    cursor: pointer;
                 }
                 .button {
                     text-align: center;
@@ -678,6 +679,7 @@ body {
             font-size: 1.25rem;
             font-family: "Lora", serif;
             font-style: italic;
+            font-weight: 500;
             line-height: 1.5;
             background-color: $blue-lightest;
             margin-top: 40px;

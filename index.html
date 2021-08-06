@@ -75,9 +75,9 @@
         <h4 data-aos="fade-up" data-aos-anchor=".wedding">Brick 828 Venue</h4>
       </header>
       <div id="countdown-container">
-        <h5 class="script">Wedding countdown</h5>
+        <h5 class="script" data-aos="fade-down" data-aos-anchor="#countdown-container">Wedding countdown</h5>
         <div id="countdown">
-          <ul>
+          <ul data-aos="fade-up" data-aos-anchor="#countdown-container">
             <li><span id="days"></span>days</li>
             <li><span id="hours"></span>hrs</li>
             <li><span id="minutes"></span>min</li>
@@ -148,17 +148,17 @@
 
     <section id="rsvp">
       <header class="rsvp">
-        <h3 data-aos="fade-down" data-aos-anchor=".rsvp">RSVP</h3>
-        <h4 data-aos="fade-up" data-aos-anchor=".rsvp">We look forward to seeing you</h4>
+        <h3 data-aos="fade-down" data-aos-anchor="#rsvp">RSVP</h3>
+        <h4 data-aos="fade-up" data-aos-anchor="#rsvp">We look forward to seeing you</h4>
       </header>
-      <div class="section_wrapper" data-aos="fade-up">
-        <div class="info">
+      <div class="section_wrapper">
+        <div class="info" data-aos="fade-up" data-aos-anchor=".info">
           <p class="script">Please RSVP by September 4 by filling out the form below.</p>
           <p>Adults only, please! (Age 16+)<br>For the safety of our friends and family, we request for all guests to be
             <u>vaccinated or recently tested for COVID-19.</u>
           </p>
         </div>
-        <div class="form">
+        <div class="form" data-aos="fade-up" data-aos-anchor=".form">
           <form name="gform" id="gform" enctype="text/plain"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeg5wPH_kLwmQo-DT8RKygmL7m5-eMgcZqGz-b5KYkiWT-irQ/formResponse"
             target="hidden_iframe" onsubmit="submitted=true;">
@@ -177,14 +177,20 @@
               </li>
               <li class="attendance">
                 <span>Will you be attending?</span>
-                <label for="yes">
-                  <input type="radio" name="entry.1430004648" id="yes" value="Yes" checked required>
-                  <span>Yes, see you there!</span>
-                </label>
-                <label for="no">
-                  <input type="radio" name="entry.1430004648" id="no" value="No" required>
-                  <span>No, can't make it</span>
-                </label>
+                <ul>
+                  <li>
+                    <label for="yes">
+                      <input type="radio" name="entry.1430004648" id="yes" value="Yes" checked required>
+                      <span>Yes, see you there!</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="no">
+                      <input type="radio" name="entry.1430004648" id="no" value="No" required>
+                      <span>No, can't make it</span>
+                    </label>
+                  </li>
+                </ul>
               </li>
               <li class="email">
                 <span>Email</span>
@@ -211,7 +217,7 @@
     </section>
 
     <section id="registry">
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-anchor="#registry">
         <h3>Registry</h3>
         <ul>
           <li class="crate_barrel" data-aos="fade-up" data-aos-delay="0" data-aos-anchor="#registry"><a
@@ -236,7 +242,7 @@
     <section id="photos">
       <div data-aos="fade-up" data-aos-anchor="#photos">
         <h3>Engagement photos</h3>
-        <ul id="imageGallery" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="#photos">
+        <ul id="imageGallery" data-aos="fade-up" data-aos-delay="100">
           <li data-thumb="images/gallery/image_01.jpg" data-src="images/gallery/image_01.jpg">
             <img src="images/gallery/thumbs/image_01_thumb.jpg" />
           </li>

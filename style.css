@@ -751,6 +751,7 @@ body .wrapper #rsvp .form input[type="radio"] {
   /* Chrome, Safari, Opera */
   transform: scale(1.5);
   margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 body .wrapper #rsvp .form .button {
@@ -992,6 +993,7 @@ body .wrapper .submitted {
   font-size: 1.25rem;
   font-family: "Lora", serif;
   font-style: italic;
+  font-weight: 500;
   line-height: 1.5;
   background-color: #F2F3F4;
   margin-top: 40px;
