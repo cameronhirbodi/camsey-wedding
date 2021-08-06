@@ -655,12 +655,6 @@ body .wrapper #rsvp .form .names ul li {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-  body .wrapper #rsvp .form .names ul li {
-    width: inherit;
-  }
-}
-
 body .wrapper #rsvp .form .names ul li input {
   display: inline-block;
 }

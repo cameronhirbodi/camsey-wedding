@@ -430,9 +430,6 @@ body {
                             padding: 0;
                             display: inline-block;
                             width: 100%;
-                            @media only screen and (min-width: 768px) {
-                                width: inherit;
-                            }
                             input {
                                 display: inline-block;
                             }
