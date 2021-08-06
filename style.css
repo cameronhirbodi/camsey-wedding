@@ -678,9 +678,17 @@ body .wrapper #rsvp .form .attendance ul li {
   margin-bottom: 1rem;
 }
 
+body .wrapper #rsvp .form .attendance ul li label {
+  display: inline-block;
+}
+
 body .wrapper #rsvp .form .attendance ul li input {
   display: inline-block;
   width: inherit;
+}
+
+body .wrapper #rsvp .form .attendance ul li span {
+  display: inline-block;
 }
 
 body .wrapper #rsvp .form .attendance ul li:not(:only-child) {
