@@ -434,13 +434,18 @@ body {
                     }
                 }
 
-                input,
+                input.text,
+                input[type="text"],
+                input[type="radio"],
+                input[type="button"],
+                input[type="submit"],
                 textarea {
                     display: block;
                     width: 100%;
                     border: none;
                     padding: 1rem;
                     border: 2px solid transparent;
+                    border-radius: 0;
                     &:focus:required:invalid {
                         border: 2px solid red;
                     }
@@ -452,15 +457,6 @@ body {
                     text-align: center;
                     display: inline-block;
                     margin-top: 20px;
-                }
-                input.text,
-                input[type="text"],
-                input[type="radio"],
-                input[type="button"],
-                input[type="submit"],
-                .input-checkbox {
-                    -webkit-appearance: none;
-                    border-radius: 0;
                 }
             }
         }
