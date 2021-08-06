@@ -649,6 +649,7 @@ body .wrapper #rsvp .form .attendance ul li:last-child {
 
 body .wrapper #rsvp .form input.text,
 body .wrapper #rsvp .form input[type="text"],
+body .wrapper #rsvp .form input[type="email"],
 body .wrapper #rsvp .form input[type="radio"],
 body .wrapper #rsvp .form input[type="button"],
 body .wrapper #rsvp .form input[type="submit"],
@@ -663,6 +664,7 @@ body .wrapper #rsvp .form textarea {
 
 body .wrapper #rsvp .form input.text:focus:required:invalid,
 body .wrapper #rsvp .form input[type="text"]:focus:required:invalid,
+body .wrapper #rsvp .form input[type="email"]:focus:required:invalid,
 body .wrapper #rsvp .form input[type="radio"]:focus:required:invalid,
 body .wrapper #rsvp .form input[type="button"]:focus:required:invalid,
 body .wrapper #rsvp .form input[type="submit"]:focus:required:invalid,
@@ -672,6 +674,7 @@ body .wrapper #rsvp .form textarea:focus:required:invalid {
 
 body .wrapper #rsvp .form input.text:focus:required:valid,
 body .wrapper #rsvp .form input[type="text"]:focus:required:valid,
+body .wrapper #rsvp .form input[type="email"]:focus:required:valid,
 body .wrapper #rsvp .form input[type="radio"]:focus:required:valid,
 body .wrapper #rsvp .form input[type="button"]:focus:required:valid,
 body .wrapper #rsvp .form input[type="submit"]:focus:required:valid,
