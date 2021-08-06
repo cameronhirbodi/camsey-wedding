@@ -728,6 +728,11 @@ body .wrapper #rsvp .form textarea:focus:required:valid {
 }
 
 body .wrapper #rsvp .form input[type="radio"] {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  width: inherit;
+  height: inherit;
   border-radius: inherit;
   border: inherit;
   padding: inherit;

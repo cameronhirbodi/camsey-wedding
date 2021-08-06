@@ -488,6 +488,11 @@ body {
                     }
                 }
                 input[type="radio"] {
+                    font-size: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    width: inherit;
+                    height: inherit;
                     border-radius: inherit;
                     border: inherit;
                     padding: inherit;
