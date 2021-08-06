@@ -652,6 +652,10 @@ body {
             }
         }
         .submitted {
+            font-size: 1.25rem;
+            font-family: "Lora", serif;
+            font-style: italic;
+            line-height: 1.5;
             background-color: $blue-lightest;
             margin-top: 40px;
             padding: 20px;

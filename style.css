@@ -964,6 +964,10 @@ body .wrapper footer {
 }
 
 body .wrapper .submitted {
+  font-size: 1.25rem;
+  font-family: "Lora", serif;
+  font-style: italic;
+  line-height: 1.5;
   background-color: #F2F3F4;
   margin-top: 40px;
   padding: 20px;
