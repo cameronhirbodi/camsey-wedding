@@ -122,9 +122,53 @@ body {
                 font-size: 0.8rem;
                 letter-spacing: 0.4rem;
             }
+            .button {
+                text-shadow: none;
+            }
             .hide-desk {
                 @media only screen and (min-width: 768px) {
                     display: none;
+                }
+            }
+        }
+        // Count Down
+
+        #countdown-container {
+            background-color: $blue-lightest;
+            padding: 40px;
+            text-align: center;
+            width: 100%;
+            grid-column: span 12;
+            #headline {
+                font-family: "Lora", serif;
+                font-size: 1rem;
+                font-style: italic;
+            }
+            li {
+                display: inline-block;
+                list-style-type: none;
+                font-size: 1rem;
+                padding: 0.5rem;
+                text-transform: uppercase;
+                .days {
+                    font-size: 0.2rem;
+                }
+            }
+            li span {
+                display: block;
+                font-size: 2rem;
+            }
+            @media all and (min-width: 768px) {
+                #countdown-container {
+                    li {
+                        padding: 1em;
+                        .days {
+                            font-size: 1rem;
+                        }
+                    }
+                    li span {
+                        font-size: 3rem;
+                    }
                 }
             }
         }
@@ -617,34 +661,6 @@ body {
             line-height: 1.5;
             @media only screen and (min-width: 768px) {
                 padding: 40px;
-            }
-            // Count Down
-
-            .count {
-                margin: 0 auto 40px;
-                text-align: center;
-                li {
-                    display: inline-block;
-                    font-size: 1rem;
-                    list-style-type: none;
-                    padding: 0.5rem;
-                    text-transform: uppercase;
-                }
-                li span {
-                    display: block;
-                    font-size: 3rem;
-                }
-            }
-            @media all and (min-width: 768px) {
-                .count {
-                    li {
-                        font-size: 2rem;
-                        padding: 1em;
-                    }
-                    li span {
-                        font-size: 4.5rem;
-                    }
-                }
             }
         }
         .submitted {

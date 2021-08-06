@@ -65,6 +65,21 @@ html body ul li {
   transition: background-color 300ms, border 300ms;
 }
 
+.button.tertiary {
+  color: #041132;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.button.tertiary:hover {
+  text-decoration: none;
+  color: #041132;
+  background-color: #E1E5E8;
+  border: 2px solid #E1E5E8;
+  -webkit-transition: background-color 300ms, border 300ms;
+  transition: background-color 300ms, border 300ms;
+}
+
 body .wrapper {
   display: -ms-grid;
   display: grid;
@@ -225,9 +240,56 @@ body .wrapper #title h2 {
   letter-spacing: 0.4rem;
 }
 
+body .wrapper #title .button {
+  text-shadow: none;
+}
+
 @media only screen and (min-width: 768px) {
   body .wrapper #title .hide-desk {
     display: none;
+  }
+}
+
+body .wrapper #countdown-container {
+  background-color: #F2F3F4;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  grid-column: span 12;
+}
+
+body .wrapper #countdown-container #headline {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+body .wrapper #countdown-container li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+body .wrapper #countdown-container li .days {
+  font-size: 0.2rem;
+}
+
+body .wrapper #countdown-container li span {
+  display: block;
+  font-size: 2rem;
+}
+
+@media all and (min-width: 768px) {
+  body .wrapper #countdown-container #countdown-container li {
+    padding: 1em;
+  }
+  body .wrapper #countdown-container #countdown-container li .days {
+    font-size: 1rem;
+  }
+  body .wrapper #countdown-container #countdown-container li span {
+    font-size: 3rem;
   }
 }
 
@@ -914,34 +976,6 @@ body .wrapper footer {
 @media only screen and (min-width: 768px) {
   body .wrapper footer {
     padding: 40px;
-  }
-}
-
-body .wrapper footer .count {
-  margin: 0 auto 40px;
-  text-align: center;
-}
-
-body .wrapper footer .count li {
-  display: inline-block;
-  font-size: 1rem;
-  list-style-type: none;
-  padding: 0.5rem;
-  text-transform: uppercase;
-}
-
-body .wrapper footer .count li span {
-  display: block;
-  font-size: 3rem;
-}
-
-@media all and (min-width: 768px) {
-  body .wrapper footer .count li {
-    font-size: 2rem;
-    padding: 1em;
-  }
-  body .wrapper footer .count li span {
-    font-size: 4.5rem;
   }
 }
 

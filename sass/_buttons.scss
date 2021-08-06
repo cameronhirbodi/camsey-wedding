@@ -31,4 +31,16 @@
             transition: background-color 300ms, border 300ms;
         }
     }
+    &.tertiary {
+        color: $blue-darkest;
+        background-color: $white;
+        border: 2px solid $white;
+        &:hover {
+            text-decoration: none;
+            color: $blue-darkest;
+            background-color: $grey-light;
+            border: 2px solid $grey-light;
+            transition: background-color 300ms, border 300ms;
+        }
+    }
 }
