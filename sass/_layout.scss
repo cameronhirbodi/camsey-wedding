@@ -131,34 +131,6 @@ body {
                 }
             }
         }
-        // Count Down
-
-        #countdown-container {
-            background-color: $blue-lightest;
-            padding: 40px;
-            text-align: center;
-            width: 100%;
-            grid-column: span 12;
-            #headline {
-                font-family: "Lora", serif;
-                font-size: 1.25rem;
-                font-style: italic;
-            }
-            li {
-                display: inline-block;
-                list-style-type: none;
-                padding: 0.5rem;
-                font-size: 0.85rem;
-                line-height: 2rem;
-                span {
-                    display: block;
-                    font-size: 2rem;
-                }
-                &.hide {
-                    display: none;
-                }
-            }
-        }
         #story {
             grid-column: span 12;
             padding: 60px 20px;
@@ -238,6 +210,35 @@ body {
                     letter-spacing: 0.4rem;
                 }
             }
+            // Count Down
+
+            #countdown-container {
+                background-color: $blue-lightest;
+                padding: 40px;
+                text-align: center;
+                width: 100%;
+                grid-column: span 12;
+                font-family: "Lora", serif;
+                font-style: italic;
+                li {
+                    display: inline-block;
+                    list-style-type: none;
+                    padding: 1rem;
+                    font-size: 0.8rem;
+                    font-family: "Poppins", sans-serif;
+                    font-style: normal;
+                    span {
+                        font-size: 1.5rem;
+                        display: block;
+                        font-family: "Lora", serif;
+                        font-style: italic;
+                        line-height: 2rem;
+                    }
+                    &.hide {
+                        display: none;
+                    }
+                }
+            }
             .section_wrapper {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
@@ -260,8 +261,8 @@ body {
                         margin-top: 0.2rem;
                     }
                     h5 {
-                        font-size: 2.441rem;
-                        line-height: 1.5;
+                        font-family: "Lora", serif;
+                        font-style: italic;
                         &:after {
                             display: block;
                             content: "";
@@ -472,6 +473,11 @@ body {
                 input[type="button"],
                 input[type="submit"],
                 textarea {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 87.5%; /*14px*/
+                    @media only screen and (min-width: 768px) {
+                        font-size: 100%; /*16px*/
+                    }
                     display: block;
                     width: 100%;
                     border: none;
@@ -651,7 +657,7 @@ body {
             }
         }
         .submitted {
-            background-color: rgba(0, 255, 0, 0.15);
+            background-color: $blue-lightest;
             margin-top: 40px;
             padding: 20px;
         }

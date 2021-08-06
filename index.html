@@ -45,21 +45,9 @@
         <h1 data-aos="fade-down" data-aos-anchor="#title">Cameron & Casey</h1>
         <h2 data-aos="fade-up" data-aos-anchor="#title">October 10, 2021</h2>
         <br>
-        <a data-aos="fade-up" data-aos-anchor="#title" class="button tertiary" href="#rsvp">RSVP</a>
+        <a data-aos="fade-up" data-aos-anchor="#title" class="button tertiary" href="#rsvp">RSVP now</a>
       </div>
     </header>
-
-    <section id="countdown-container">
-      <h3 id="headline">Countdown to the big day:</h3>
-      <div id="countdown">
-        <ul>
-          <li><span id="days"></span>Days</li>
-          <li><span id="hours"></span>Hours</li>
-          <li><span id="minutes"></span>Minutes</li>
-          <li class="hide"><span id="seconds"></span>Seconds</li>
-        </ul>
-      </div>
-    </section>
 
     <section id="story">
       <div data-aos="fade-up">
@@ -86,6 +74,17 @@
         <h3 data-aos="fade-down" data-aos-anchor=".wedding">The Wedding</h3>
         <h4 data-aos="fade-up" data-aos-anchor=".wedding">Brick 828 Venue</h4>
       </header>
+      <div id="countdown-container">
+        <h5 class="script">Wedding countdown</h5>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>hrs</li>
+            <li><span id="minutes"></span>min</li>
+            <li class="hide"><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
       <div class="section_wrapper" data-aos="fade-up">
         <div class="location">
           <p class="script">Brick Venue<br />2863 Historic Decatur Rd, San Diego, CA 92106</p>
@@ -414,7 +413,7 @@
   <script type="text/javascript">
     $('#gform').on('submit', function (e) {
       $('#gform *').fadeOut(1000);
-      $('#gform').prepend('Thank you for your RVSP! <br>Please contact us if you have any further questions or concerns!');
+      $('#gform').prepend('Thank you for your RSVP!');
       window.setTimeout(function () { $('#gform').addClass("submitted"); }, 1000);
       var elmnt = document.getElementById("gform");
       elmnt.scrollIntoView();
