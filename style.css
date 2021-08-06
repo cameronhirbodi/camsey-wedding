@@ -742,6 +742,7 @@ body .wrapper #rsvp .form input[type="radio"] {
   -webkit-transform: scale(1.5);
   /* Chrome, Safari, Opera */
   transform: scale(1.5);
+  margin-right: 0.5rem;
 }
 
 body .wrapper #rsvp .form .button {
