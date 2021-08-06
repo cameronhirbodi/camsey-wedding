@@ -141,34 +141,21 @@ body {
             grid-column: span 12;
             #headline {
                 font-family: "Lora", serif;
-                font-size: 1rem;
+                font-size: 1.25rem;
                 font-style: italic;
             }
             li {
                 display: inline-block;
                 list-style-type: none;
-                font-size: 1rem;
                 padding: 0.5rem;
-                text-transform: uppercase;
-                .days {
-                    font-size: 0.2rem;
+                font-size: 0.85rem;
+                line-height: 1.5rem;
+                span {
+                    display: block;
+                    font-size: 1.5rem;
                 }
-            }
-            li span {
-                display: block;
-                font-size: 2rem;
-            }
-            @media all and (min-width: 768px) {
-                #countdown-container {
-                    li {
-                        padding: 1em;
-                        .days {
-                            font-size: 1rem;
-                        }
-                    }
-                    li span {
-                        font-size: 3rem;
-                    }
+                &.hide {
+                    display: none;
                 }
             }
         }

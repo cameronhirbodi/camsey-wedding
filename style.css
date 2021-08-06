@@ -260,37 +260,25 @@ body .wrapper #countdown-container {
 
 body .wrapper #countdown-container #headline {
   font-family: "Lora", serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-style: italic;
 }
 
 body .wrapper #countdown-container li {
   display: inline-block;
   list-style-type: none;
-  font-size: 1rem;
   padding: 0.5rem;
-  text-transform: uppercase;
-}
-
-body .wrapper #countdown-container li .days {
-  font-size: 0.2rem;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
 }
 
 body .wrapper #countdown-container li span {
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-@media all and (min-width: 768px) {
-  body .wrapper #countdown-container #countdown-container li {
-    padding: 1em;
-  }
-  body .wrapper #countdown-container #countdown-container li .days {
-    font-size: 1rem;
-  }
-  body .wrapper #countdown-container #countdown-container li span {
-    font-size: 3rem;
-  }
+body .wrapper #countdown-container li.hide {
+  display: none;
 }
 
 body .wrapper #story {
