@@ -276,6 +276,7 @@ body {
                     }
                     .time {
                         font-weight: 500;
+                        letter-spacing: 0.3rem;
                         font-family: "Poppins", sans-serif;
                         text-transform: uppercase;
                     }
@@ -471,10 +472,7 @@ body {
                 input[type="submit"],
                 textarea {
                     font-family: "Poppins", sans-serif;
-                    font-size: 87.5%; /*14px*/
-                    @media only screen and (min-width: 768px) {
-                        font-size: 100%; /*16px*/
-                    }
+                    font-size: 1rem;
                     display: block;
                     width: 100%;
                     border: none;
